@@ -12,10 +12,5 @@ title: Running U-Boot & Linux Kernel in QEMU
 # or lessons.
 # type: Ordered List of Chapter or Lesson
 plan:
-    # The lesson title.
-    # type: String
-    - title: Introduction
-    # The statement content file. The path is relative to the git root
-    # directory.
-    # type: String
-    statement: /markdowns/lesson01.md
+- title: Introduction
+  statement: /markdowns/lesson01.md
