@@ -15,4 +15,6 @@ This tutorial is inspired by and heavily followed the contents of this amazing t
   - GNU toolchain for RISC-V: https://github.com/riscv-collab/riscv-gnu-toolchain
     - These are needed to cross compile (build for RISC-V from non-RISC-V machine, e.g., x86) for RISC-V hardware
 
+The readers are requested to install necessary software in their host machine to try the scripts of this tutorial. This tutorial is developed on `Debian 11`.
 
+Let's get started.
