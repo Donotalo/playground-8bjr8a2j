@@ -1,3 +1,3 @@
-# Hello world,
+# Introduction
 
-Welcome to this playground about this amazing technology. I'll show you ...
+This tutorial is designed to be beginner friendly, for those who want to start tinkering with U-Boot and Linux. The purpose of this tutorial is to run U-Boot and Linux in QEMU.
