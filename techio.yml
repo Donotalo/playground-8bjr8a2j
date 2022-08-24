@@ -1,4 +1,21 @@
-title: Custom Template
+# The playground title.
+# type: String
+title: Running U-Boot & Linux Kernel in QEMU
+
+# Specify a cover for your playground.
+# This is a small image (jpg/png) that will be displayed
+# in the playground card. By default, you can also create
+# a cover.jpg (or cover.png) at the root of your repository
+# cover: /path/to/an/image.jpg
+
+# The root of the playground plan. The plan can either be composed of chapters
+# or lessons.
+# type: Ordered List of Chapter or Lesson
 plan:
-- title: Welcome
-  statement: markdowns/welcome.md
+    # The lesson title.
+    # type: String
+    - title: Introduction
+    # The statement content file. The path is relative to the git root
+    # directory.
+    # type: String
+    statement: /markdowns/lesson01.md
