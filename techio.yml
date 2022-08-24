@@ -13,4 +13,4 @@ title: Running U-Boot & Linux Kernel in QEMU
 # type: Ordered List of Chapter or Lesson
 plan:
 - title: Introduction
-  statement: /markdowns/lesson01.md
+  statement: /lessons/lesson01.md
