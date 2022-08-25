@@ -4,7 +4,7 @@ I'm a beginner in the field of U-Boot and QEMU. I felt like it'd be good to have
 
 # Prologue
 
-This tutorial is designed to be beginner friendly, for those who want to start with embedded devices running Linux and U-Boot. The purpose of this tutorial is to show how to run U-Boot and Linux in QEMU and to list necessary resources all in one place. Because the code will be running on emulated machine, there is no need for real hardware. The chosen architecture is RISC-V.
+The purpose of this tutorial is to show how to run U-Boot and Linux in QEMU and to list necessary resources all in one place. Because the code will be running on emulated machine, there is no need for real hardware. The chosen architecture is `RISC-V`.
 
 This tutorial is inspired by and heavily followed the contents of this amazing talk: [Embedded Linux from scratch in RISC-V](https://mirror.cyberbits.eu/fosdem/2021/D.embedded/linux_from_scratch_on_risc_v.webm).
 
@@ -21,4 +21,4 @@ This tutorial is inspired by and heavily followed the contents of this amazing t
 
 The readers are requested to install necessary software in their host machine to try the scripts of this tutorial. This tutorial is developed on `Debian 11.4`.
 
-Let's get started.
+Let's start.
