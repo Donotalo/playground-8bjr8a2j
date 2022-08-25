@@ -21,6 +21,12 @@ tar xf buildroot-2022.05.1.tar.gz
 ```bash
 cd buildroot-2022.05.1
 
+# Install pre-requisites to build buildroot
+sudo apt install libncurses-dev
+
 # To generate toolchain
 make menuconfig
 ```
+
+Select the following options:
+1. 
