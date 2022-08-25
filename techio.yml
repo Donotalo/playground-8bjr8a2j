@@ -14,5 +14,5 @@ title: Running U-Boot & Linux Kernel in QEMU
 plan:
 - title: Prologue
   statement: /lessons/lesson01.md
-- title: TBD
+- title: Pre-requisites
   statement: /lessons/lesson02.md
