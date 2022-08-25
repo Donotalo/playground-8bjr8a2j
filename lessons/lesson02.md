@@ -5,6 +5,12 @@ On a fresh Debian machine, necessary software to build software can be installed
 sudo apt install build-essential
 ```
 
+However, following command can be executed to install all software necessary for this tutorial:
+
+``` bash
+sudo apt install build-essential libncurses-dev rsync
+```
+
 [Buildroot](https://buildroot.org/) is a software package that can generate necessary tools for cross compiling code base for embedded Linux. This tutorial will use version `v2022.05.1`.
 
 ``` bash
@@ -18,11 +24,8 @@ tar xf buildroot-2022.05.1.tar.gz
 > - x = Extract files
 > - f = Use archive file
 
-``` sh
+``` bash
 cd buildroot-2022.05.1
-
-# Install pre-requisites to build buildroot
-sudo apt install libncurses-dev
 
 # To generate toolchain
 make menuconfig
@@ -38,4 +41,8 @@ Select the following options:
     1. Binutils Version > binutils 2.38
     1. GCC compiler Version > gcc 11.x
 
-Exit and save the configuration.
+Exit and save the configuration. Build the toolchain:
+
+``` bash
+make sdk
+```
