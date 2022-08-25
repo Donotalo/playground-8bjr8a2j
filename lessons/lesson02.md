@@ -1,11 +1,6 @@
 # Installing Pre-requisites
 
-On a fresh Debian machine, necessary software to build software can be installed by the following command:
-``` bash
-sudo apt install build-essential
-```
-
-However, following command can be executed to install all software necessary for this tutorial:
+Following command can be executed to install all software necessary for this tutorial:
 
 ``` bash
 sudo apt install build-essential libncurses-dev rsync
