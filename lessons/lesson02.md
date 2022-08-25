@@ -14,11 +14,11 @@ wget https://buildroot.org/downloads/buildroot-2022.05.1.tar.gz
 # Extract from compressed file
 tar xf buildroot-2022.05.1.tar.gz
 ```
-`tar` parameters:
-- x = Extract files
-- f = Use archive file
+> `tar` parameters:
+> - x = Extract files
+> - f = Use archive file
 
-``` bash
+``` sh
 cd buildroot-2022.05.1
 
 # Install pre-requisites to build buildroot
@@ -38,3 +38,4 @@ Select the following options:
     1. Binutils Version > binutils 2.38
     1. GCC compiler Version > gcc 11.x
 
+Exit and save the configuration.
