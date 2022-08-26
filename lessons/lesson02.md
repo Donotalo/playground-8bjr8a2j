@@ -80,3 +80,18 @@ Write the following in the script:
 ```
 export PATH=~/tech.io/toolchain/riscv64-buildroot-linux-musl_sdk-buildroot/bin:$PATH
 ```
+
+Update & test:
+
+``` bash
+source tech.io-env.sh
+riscv64-linux-gcc --version
+```
+
+It presented the version as follows:
+```
+riscv64-linux-gcc.br_real (Buildroot 2022.05.1) 11.3.0
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+```
