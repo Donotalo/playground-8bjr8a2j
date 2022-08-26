@@ -76,7 +76,7 @@ cd ..
 gedit tech.io-env.sh &
 ```
 
-Write the following in the script:
+Write the following in the `tech.io-env.sh` file:
 ```
 export PATH=~/tech.io/toolchain/riscv64-buildroot-linux-musl_sdk-buildroot/bin:$PATH
 ```
