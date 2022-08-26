@@ -16,3 +16,5 @@ plan:
   statement: /lessons/lesson01.md
 - title: Pre-requisites
   statement: /lessons/lesson02.md
+- title: TBD
+  statement: /lessons/lesson03.md
