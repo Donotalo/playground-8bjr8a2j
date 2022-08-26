@@ -18,4 +18,4 @@ git submodule update --recursive
 make -j$(nproc)
 ```
 > - `--target-list=riscv64-softmmu` = Configure QEMU to run 64 bit RISC-V architecture code
-> - `-j$(nproc)` = `$(nproc)` will expand to number of available processing units, `-j` flag will paralellize build utilizing number of threads indicated by `$(nproc)`
+> - `-j$(nproc)` = `$(nproc)` will expand to number of available processing units, `-j` flag will paralellize build utilizing the output indicated by `$(nproc)`
