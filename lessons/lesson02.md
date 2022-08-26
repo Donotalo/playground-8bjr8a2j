@@ -60,4 +60,23 @@ mkdir toolchain && cd toolchain
 tar xf ../buildroot-2022.05.1/output/images/riscv64-buildroot-linux-musl_sdk-buildroot.tar.gz
 ```
 
-All the important binaries are now in `riscv64-buildroot-linux-musl_sdk-buildroot/bin` directory. Fix the pat
+All the important binaries are now in `riscv64-buildroot-linux-musl_sdk-buildroot/bin` directory. Fix the hardcoded paths by running the script:
+
+``` bash
+riscv64-buildroot-linux-musl_sdk-buildroot/relocate-sdk.sh
+```
+
+Place the binaries in system path:
+
+``` bash
+# Go to the working directory
+cd ..
+
+# Create a script to update system path
+gedit tech.io-env.sh &
+```
+
+Write the following in the script:
+```
+export PATH=~/tech.io/toolchain/riscv64-buildroot-linux-musl_sdk-buildroot/bin:$PATH
+```
