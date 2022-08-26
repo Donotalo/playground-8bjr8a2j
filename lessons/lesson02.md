@@ -30,7 +30,7 @@ tar xf buildroot-2022.05.1.tar.gz
 ``` bash
 cd buildroot-2022.05.1
 
-# To generate toolchain
+# To generate toolchain configuration file
 make menuconfig
 ```
 
