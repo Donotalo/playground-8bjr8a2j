@@ -3,7 +3,7 @@
 Following command can be executed to install all software necessary for this tutorial:
 
 ``` bash
-sudo apt install build-essential libncurses-dev rsync git
+sudo apt install build-essential libncurses-dev rsync git ninja-build
 ```
 
 Prepare a working directory:
