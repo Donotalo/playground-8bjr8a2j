@@ -60,4 +60,4 @@ mkdir toolchain && cd toolchain
 tar xf ../buildroot-2022.05.1/output/images/riscv64-buildroot-linux-musl_sdk-buildroot.tar.gz
 ```
 
-All the important binaries are now in `riscv64-buildroot-linux-musl_sdk-buildroot/bin` directory.
+All the important binaries are now in `riscv64-buildroot-linux-musl_sdk-buildroot/bin` directory. Fix the pat
