@@ -16,5 +16,9 @@ plan:
   statement: /lessons/lesson01.md
 - title: Pre-requisites
   statement: /lessons/lesson02.md
-- title: TBD
+- title: Preparing QEMU for RISC-V
   statement: /lessons/lesson03.md
+- title: TBD
+  statement: /lessons/lesson04.md
+- title: TBD
+  statement: /lessons/lesson05.md
