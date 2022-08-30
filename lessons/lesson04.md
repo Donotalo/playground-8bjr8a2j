@@ -1,4 +1,4 @@
-# U-Boot Pre-requisites
+# Pre-requisites
 
 The `CROSS_COMPILE` variable needs to be added to environment variable. `CROSS_COMPILE` should be a prefix to the RISC-V toolchain name that's added to the path. U-Boot build system will use this variable to correctly indentify the toolchain needed.
 
@@ -65,3 +65,6 @@ make qemu-riscv64_smode_defconfig
 # To build U-Boot
 make -j$(nproc)
 ```
+
+## Output
+The U-Boot binary is located at `./u-boot.bin`.
