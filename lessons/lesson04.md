@@ -57,5 +57,9 @@ A `QEMU` simulated board will be chosen, with RISC-V 64 bit architecture. `qemu-
 
 The command to build is:
 ``` bash
+# To generate .config file out of board configuration file
 make qemu-riscv64_smode_defconfig
+
+# To build U-Boot
+make -j$(nproc)
 ```
