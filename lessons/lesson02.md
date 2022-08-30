@@ -60,7 +60,7 @@ mkdir toolchain && cd toolchain
 tar xf ../buildroot-2022.05.1/output/images/riscv64-buildroot-linux-musl_sdk-buildroot.tar.gz
 ```
 
-All the important binaries are now in `riscv64-buildroot-linux-musl_sdk-buildroot/bin` directory. Fix the hardcoded paths by running the script:
+All the important binaries are now in `riscv64-buildroot-linux-musl_sdk-buildroot/bin` directory. The RISC-V compier is `riscv64-linux-gcc`. Fix the hardcoded paths by running the script:
 
 ``` bash
 riscv64-buildroot-linux-musl_sdk-buildroot/relocate-sdk.sh
