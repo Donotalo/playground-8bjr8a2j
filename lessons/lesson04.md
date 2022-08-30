@@ -35,6 +35,8 @@ git checkout v2022.07
 
 ## Find Architecture Specific Configuration Files
 
+This part isn't mandatory if the board configuration file is known.
+
 U-Boot stores board specific configuration files in the `configs` directory. Let's list available configuration files for RISC-V:
 ``` bash
 ls configs | grep riscv --color=always
