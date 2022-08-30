@@ -33,3 +33,5 @@ The system can now be run by the following command:
 ``` bash
 ./run-u-boot.sh
 ```
+
+QEMU can be exited by pressing `Ctrl+A` + `X`.
