@@ -22,3 +22,5 @@ plan:
   statement: /lessons/lesson04.md
 - title: Preparing OpenSBI
   statement: /lessons/lesson05.md
+- title: Run U-Boot in QEMU
+  statement: /lessons/lesson06.md
