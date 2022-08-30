@@ -51,3 +51,8 @@ qemu-riscv64_smode_defconfig
 qemu-riscv64_spl_defconfig
 ```
 
+A `QEMU` simulated board will be chosen, with RISC-V 64 bit architecture. `qemu-riscv64_smode_defconfig` will serve the purpose of this tutorial. The S-Mode (supervisor mode) configuration is chosen so that it can load Linux kernel.
+
+``` bash
+make qemu-riscv64_smode_defconfig
+```
