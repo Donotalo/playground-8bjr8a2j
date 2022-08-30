@@ -10,8 +10,8 @@ Write the following in the `run-u-boot.sh`:
 ```
 #! /usr/bin/bash
 
-./build/qemu-system-riscv64 -smp 4 \
--m 2G \
+./build/qemu-system-riscv64 -smp 2 \
+-m 1G \
 -nographic \
 -machine virt \
 -bios ../opensbi/build/platform/generic/firmware/fw_payload.elf
