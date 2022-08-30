@@ -7,10 +7,10 @@ sudo apt install build-essential libncurses-dev rsync git ninja-build libglib2.0
 ```
 
 Prepare a working directory:
-
 ``` bash
 mkdir tech.io && cd tech.io
 ```
+This will be considered as the root working directory for this tutorial.
 
 # Installing Toolchain
 
