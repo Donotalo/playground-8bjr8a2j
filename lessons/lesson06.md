@@ -11,7 +11,7 @@ Write the following in the `run-u-boot.sh`:
 #! /usr/bin/bash
 
 ./build/qemu-system-riscv64 -smp 4 \
--m 8G \
+-m 2G \
 -nographic \
 -machine virt \
 -bios ../opensbi/build/platform/generic/firmware/fw_payload.elf
