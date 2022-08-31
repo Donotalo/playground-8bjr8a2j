@@ -10,3 +10,8 @@ Save and close the file. Now run it:
 ``` bash
 source tech.io-env.sh
 ```
+
+Let's download Linux kernel source code and build it from there. Run the following from the root working directory:
+``` bash
+git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+```
