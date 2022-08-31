@@ -24,3 +24,5 @@ plan:
   statement: /lessons/lesson05.md
 - title: Run U-Boot in QEMU
   statement: /lessons/lesson06.md
+- title: Preparing Linux Kernel
+  statement: /lessons/lesson07.md
