@@ -20,6 +20,18 @@ Let's download Linux kernel source code and build it from there. Linux `v5.19.6`
 # Download the compressed file that contains Linux source code
 wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.19.6.tar.xz
 
-# Extract
+# Extract and enter into directory
+tar xf linux-5.19.6.tar.xz
+cd linux-5.19.6/
+```
 
+Linux kernel will be built for `RISC-V` architecture. The default configurations for several targets can be obtained by the command below:
+``` bash
+make help | grep defconfig --color=always
+```
+
+The default configutation, `defconfig`, is good enough so let's build it:
+``` bash
+make defconfig
+make -j$(nproc)
 ```
