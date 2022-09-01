@@ -40,7 +40,11 @@ make -j$(nproc)
 
 ## Did it Compile for RISC-V?
 
-Open the `.config` file. Observe that the RISC-V configuration option is enabled:
+Open the `.config` file.
+``` bash
+gedit .config &
+```
+Observe that the RISC-V configuration option is enabled:
 ```
 CONFIG_RISCV=y
 ```
