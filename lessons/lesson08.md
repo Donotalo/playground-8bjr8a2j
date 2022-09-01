@@ -17,3 +17,5 @@ dd if=/dev/zero of=disk.img bs=1M count=128
 > - `of` = Output file (write to this file)
 > - `bs` = Reads/writes up to this amount of bytes at a time
 > - `count` = Copy only this many input block from `if`
+
+Two partitions will be created on this disk. The first partition will be bootable.
