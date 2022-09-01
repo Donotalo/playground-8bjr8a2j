@@ -35,3 +35,10 @@ The default configutation, `defconfig`, is good enough so let's build it:
 make defconfig
 make -j$(nproc)
 ```
+
+## Did it Compile for RISC-V
+
+
+
+## Output Files
+
