@@ -16,7 +16,7 @@ plan:
   statement: /lessons/lesson01.md
 - title: Pre-requisites
   statement: /lessons/lesson02.md
-- title: Preparing QEMU for RISC-V
+- title: Preparing QEMU
   statement: /lessons/lesson03.md
 - title: Preparing U-Boot
   statement: /lessons/lesson04.md
@@ -26,3 +26,5 @@ plan:
   statement: /lessons/lesson06.md
 - title: Preparing Linux Kernel
   statement: /lessons/lesson07.md
+- title: Booting Linux Kernel
+  statement: /lessons/lesson08.md
