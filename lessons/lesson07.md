@@ -48,7 +48,7 @@ Observe that the RISC-V configuration option is enabled:
 ```
 CONFIG_RISCV=y
 ```
-This happens because of the environment variable `ARCH` is set to `riscv`. It is used to generate the `.config` file. The details can be found by opening the `Makefile`:
+This happens because of the environment variable `ARCH` is set to `riscv`. It is used when the `.config` file was generated. The details can be found by opening the `Makefile`:
 ``` bash
 gedit ./Makefile &
 ```
