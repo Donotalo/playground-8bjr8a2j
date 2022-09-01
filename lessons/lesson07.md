@@ -52,4 +52,4 @@ and searching for `ARCH` and `CROSS_COMPILE`.
 
 ## Output Files
 
-The output file is `arch/riscv/boot/Image.gz`.
+The output file is `arch/riscv/boot/Image` and a compressed copy of it is at `arch/riscv/boot/Image.gz`.
