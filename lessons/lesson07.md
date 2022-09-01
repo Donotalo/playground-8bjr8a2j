@@ -15,7 +15,8 @@ source tech.io-env.sh
 
 # Build Linux Kernel
 
-Let's download Linux kernel source code and build it from there. Run the following from the root working directory:
+Let's download Linux kernel source code and build it from there. Linux `v5.19.6` will be used for this tutorial. Run the following from the root working directory:
 ``` bash
-git clone git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+# Download the compressed file that contains Linux source code
+wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.19.6.tar.xz
 ```
