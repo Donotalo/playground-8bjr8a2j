@@ -32,13 +32,24 @@ make help | grep defconfig --color=always
 
 The default configutation, `defconfig`, is good enough so let's build it:
 ``` bash
+# Generate .config file
 make defconfig
+
 make -j$(nproc)
 ```
 
-## Did it Compile for RISC-V
+## Did it Compile for RISC-V?
 
-
+Open the `.config` file. Observe that the RISC-V configuration option is enabled:
+```
+CONFIG_RISCV=y
+```
+This happens because of the environment variable `ARCH` is set to `riscv`. It is used to generate the `.config` file. The details can be found by opening the `Makefile`:
+``` bash
+gedit ./Makefile &
+```
+and searching for `ARCH` and `CROSS_COMPILE`.
 
 ## Output Files
 
+The output file is `arch/riscv/boot/Image.gz`.
