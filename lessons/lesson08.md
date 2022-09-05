@@ -18,4 +18,20 @@ dd if=/dev/zero of=disk.img bs=1M count=128
 > - `bs` = Reads/writes up to this amount of bytes at a time
 > - `count` = Copy only this many input block from `if`
 
-Two partitions will be created on this disk. The first partition will be bootable.
+Two partitions will be created on the disk image `disk.img`. The first partition will be bootable.
+
+## Creating Paritions
+
+[`parted`](https://linux.die.net/man/8/parted) will be used to create partitions on the image `disk.img`. Create a partition table on the image:
+``` bash
+parted disk.img mklabel gpt
+```
+
+Now it has a partition table. Let's mount the image as [loop device](https://en.wikipedia.org/wiki/Loop_device) so that it can be used as [block device](https://en.wikipedia.org/wiki/Device_file#Block_devices). A block device is a type of device from which blocks of data can be read from/written to at a time. Mounting `disk.img` as block device will allow making partitions in it.
+``` bash
+# Setup disk.img as first available loop device
+losetup -f disk.img
+
+# List available loop devices, one of it should be disk.img
+losetup -l
+```
