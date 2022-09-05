@@ -35,3 +35,7 @@ losetup -f disk.img
 # List available loop devices, one of it should be disk.img
 losetup -l
 ```
+Note the full path of the loop device. On the tutorial machine it was `/dev/loop1`. Let's continue partitioning:
+``` bash
+
+```
