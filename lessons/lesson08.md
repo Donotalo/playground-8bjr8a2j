@@ -39,10 +39,8 @@ sudo losetup --find --show disk.img
 
 Note the full path of the loop device. On the tutorial machine it was `/dev/loop0`. Operaing on `/dev/loop0` will operate on the `disk.img`. Let's continue partitioning:
 ``` bash
-# Create 64MB primary partition
+# Create a couple of primary partitions
 sudo parted --align minimal /dev/loop0 mkpart primary ext4 0 50%
-
-# Create another partition
 sudo parted --align minimal /dev/loop0 mkpart primary ext4 51% 100%
 
 # Optional: inspect the partitions
