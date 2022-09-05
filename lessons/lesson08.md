@@ -31,7 +31,7 @@ sudo parted disk.img mklabel gpt
 
 Now it has a partition table. Let's mount the image as [loop device](https://en.wikipedia.org/wiki/Loop_device) so that it can be used as [block device](https://en.wikipedia.org/wiki/Device_file#Block_devices). A block device is a type of device from which blocks of data can be read from/written to at a time. Mounting `disk.img` as block device will allow creating partitions in it.
 ``` bash
-# Setup disk.img as first available loop device
+# Attach disk.img with the first available loop device
 sudo losetup --find --show disk.img
 ```
 > - `find` = Finds the first unused loop device
