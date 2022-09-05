@@ -24,27 +24,27 @@ Two partitions will be created on the disk image `disk.img`. The first partition
 
 [`parted`](https://linux.die.net/man/8/parted) will be used to create partitions on the image `disk.img`. Create a partition table on the image:
 ``` bash
-parted disk.img mklabel gpt
+sudo parted disk.img mklabel gpt
 ```
 
 Now it has a partition table. Let's mount the image as [loop device](https://en.wikipedia.org/wiki/Loop_device) so that it can be used as [block device](https://en.wikipedia.org/wiki/Device_file#Block_devices). A block device is a type of device from which blocks of data can be read from/written to at a time. Mounting `disk.img` as block device will allow making partitions in it.
 ``` bash
 # Setup disk.img as first available loop device
-losetup -f disk.img
+sudo losetup -f disk.img
 
 # List available loop devices, one of it should be disk.img
-losetup -l
+sudo losetup -l
 ```
 Note the full path of the loop device. On the tutorial machine it was `/dev/loop0`. Let's continue partitioning:
 ``` bash
 # Create 64MB primary partition
-parted --align minimal /dev/loop0 mkpart primary ext2 0 64M
+sudo parted --align minimal /dev/loop0 mkpart primary ext2 0 64M
 
 # Create another 64MB partition
-parted --align minimal /dev/loop0 mkpart primary ext2 64M 100%
+sudo parted --align minimal /dev/loop0 mkpart primary ext2 64M 100%
 
 # Optional: inspect the partitions
-parted /dev/loop0 print
+sudo parted /dev/loop0 print
 ```
 > - `align` = Set partition alignment for optimum performance
 > - `mkpart` = `parted` command to create partition
@@ -53,3 +53,4 @@ parted /dev/loop0 print
 > - `0` = Beginning of the partition
 > - `100%` = End of the partition
 
+## Formatting the partitions
