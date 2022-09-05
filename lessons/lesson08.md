@@ -1,11 +1,11 @@
-# Procedure
-
 To properly load Linux kernel in QEMU, additional storage is required that will hold the following:
 1. U-Boot environment to load Linux kernel and specify Linux kernel command line.
 2. Linux kernel binary.
 3. Filesystem where Linux will boot.
 
-## Creating Storage
+This section of the tutorial will prepare the storage for Linux booting.
+
+# Creating Storage
 
 Run the following command in terminal from root working directory to create storage space:
 ``` bash
@@ -20,7 +20,7 @@ dd if=/dev/zero of=disk.img bs=1M count=128
 
 Two partitions will be created on the disk image `disk.img`. The first partition will be bootable.
 
-## Creating Partitions
+# Creating Partitions
 
 [`parted`](https://linux.die.net/man/8/parted) will be used to create partitions in the image `disk.img`. Create a partition table in the image:
 ``` bash
@@ -53,7 +53,7 @@ sudo parted /dev/loop0 print
 > - `0` = Beginning of the partition
 > - `100%` = End of the partition
 
-## Formatting the Partitions
+# Formatting the Partitions
 
 The partitions can be observed by the following command:
 ``` bash
@@ -68,4 +68,19 @@ sudo mkfs.ext4 /dev/loop0p2
 
 # Mark first partition as bootable
 sudo parted /dev/loop0 set 1 boot on
+```
+
+# Copy the Linux Kernel
+
+The Linux kernel was built from source for `RISC-V`. Now we've some storage (`disk.img`) ready where the kernel can reside.
+``` bash
+# Mount the boot partition
+sudo mkdir /mnt/boot
+sudo mount /dev/loop0p1 /mnt/boot
+
+# Copy the Linux kernel
+sudo cp linux-5.19.6/arch/riscv/boot/Image /mnt/boot
+
+# Unmount the boot partition to save the changes
+sudo umount /mnt/boot
 ```
