@@ -39,4 +39,10 @@ Note the full path of the loop device. On the tutorial machine it was `/dev/loop
 ``` bash
 # Create 64MB primary partition
 parted --align minimal /dev/loop0 mkpart primary ext2 0 64M
+
+# Create another 64MB partition
+parted --align minimal /dev/loop0 mkpart primary ext2 64M 100%
+
+# Optional: inspect the partitions
+parted /dev/loop0 print
 ```
