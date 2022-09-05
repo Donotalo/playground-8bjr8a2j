@@ -22,7 +22,7 @@ Two partitions will be created on the disk image `disk.img`. The first partition
 
 ## Creating Partitions
 
-[`parted`](https://linux.die.net/man/8/parted) will be used to create partitions on the image `disk.img`. Create a partition table on the image:
+[`parted`](https://linux.die.net/man/8/parted) will be used to create partitions on the image `disk.img`. Create a partition table in the image:
 ``` bash
 sudo parted disk.img mklabel gpt
 ```
