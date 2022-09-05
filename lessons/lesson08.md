@@ -46,3 +46,10 @@ parted --align minimal /dev/loop0 mkpart primary ext2 64M 100%
 # Optional: inspect the partitions
 parted /dev/loop0 print
 ```
+> - `align` = Set partition alignment for optimum performance
+> - `mkpart` = `parted` command to create partition
+> - `primary` = To make primary partition
+> - `ext2` = Type of the filesystem
+> - `0` = Beginning of the partition
+> - `100%` = End of the partition
+
