@@ -53,10 +53,16 @@ sudo parted /dev/loop0 print
 > - `0` = Beginning of the partition
 > - `100%` = End of the partition
 
-## Formatting the partitions
+## Formatting the Partitions
 
 The partitions can be observed by the following command:
 ``` bash
 ls -l /dev/loop0*
 ```
 On the tutorial machine, the partitions are `/dev/loop0p1` and `/dev/loop0p2`.
+
+Format the partitions and create [`ext4`](https://en.wikipedia.org/wiki/Ext4) filesystem:
+``` bash
+sudo mkfs.ext4 /dev/loop0p1
+sudo mkfs.ext4 /dev/loop0p2
+```
