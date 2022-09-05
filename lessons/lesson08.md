@@ -35,7 +35,8 @@ losetup -f disk.img
 # List available loop devices, one of it should be disk.img
 losetup -l
 ```
-Note the full path of the loop device. On the tutorial machine it was `/dev/loop1`. Let's continue partitioning:
+Note the full path of the loop device. On the tutorial machine it was `/dev/loop0`. Let's continue partitioning:
 ``` bash
-
+# Create 64MB primary partition
+parted --align minimal /dev/loop0 mkpart primary ext2 0 64M
 ```
