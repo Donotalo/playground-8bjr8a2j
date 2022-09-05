@@ -38,10 +38,10 @@ sudo losetup -l
 Note the full path of the loop device. On the tutorial machine it was `/dev/loop0`. Let's continue partitioning:
 ``` bash
 # Create 64MB primary partition
-sudo parted --align minimal /dev/loop0 mkpart primary ext2 0 64M
+sudo parted --align minimal /dev/loop0 mkpart primary ext4 0 50%
 
-# Create another 64MB partition
-sudo parted --align minimal /dev/loop0 mkpart primary ext2 64M 100%
+# Create another partition
+sudo parted --align minimal /dev/loop0 mkpart primary ext4 51% 100%
 
 # Optional: inspect the partitions
 sudo parted /dev/loop0 print
