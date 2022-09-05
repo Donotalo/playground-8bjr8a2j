@@ -65,4 +65,7 @@ Format the partitions and create [`ext4`](https://en.wikipedia.org/wiki/Ext4) fi
 ``` bash
 sudo mkfs.ext4 /dev/loop0p1
 sudo mkfs.ext4 /dev/loop0p2
+
+# Mark first partition as bootable
+sudo parted /dev/loop0 set 1 boot on
 ```
