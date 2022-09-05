@@ -51,7 +51,7 @@ sudo parted /dev/loop0 print
 > - `align` = Set partition alignment for optimum performance
 > - `mkpart` = `parted` command to create partition
 > - `primary` = To make primary partition
-> - `ext2` = Type of the filesystem
+> - `ext4` = Type of the filesystem
 > - `0` = Beginning of the partition
 > - `100%` = End of the partition
 
