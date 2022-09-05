@@ -54,3 +54,9 @@ sudo parted /dev/loop0 print
 > - `100%` = End of the partition
 
 ## Formatting the partitions
+
+The partitions can be observed by the following command:
+``` bash
+ls -l /dev/loop0*
+```
+On the tutorial machine, the partitions are `/dev/loop0p1` and `/dev/loop0p2`.
