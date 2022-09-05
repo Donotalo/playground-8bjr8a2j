@@ -36,6 +36,7 @@ sudo losetup --find --show disk.img
 ```
 > - `find` = Finds the first unused loop device
 > - `show` = Show the name of the loop device `disk.img` is attached to
+
 Note the full path of the loop device. On the tutorial machine it was `/dev/loop0`. Operaing on `/dev/loop0` will operate on the `disk.img`. Let's continue partitioning:
 ``` bash
 # Create 64MB primary partition
