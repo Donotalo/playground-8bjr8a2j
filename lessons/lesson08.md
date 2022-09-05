@@ -1,8 +1,8 @@
 # Procedure
 
 To properly load Linux kernel in QEMU, additional storage is required that will hold the following:
-1. U-Boot environment to load Linux kernel.
-2. Linux kernel command line.
+1. U-Boot environment to load Linux kernel and specify Linux kernel command line.
+2. Linux kernel binary.
 3. Filesystem where Linux will boot.
 
 ## Creating Storage
