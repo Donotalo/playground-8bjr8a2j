@@ -32,12 +32,11 @@ sudo parted disk.img mklabel gpt
 Now it has a partition table. Let's mount the image as [loop device](https://en.wikipedia.org/wiki/Loop_device) so that it can be used as [block device](https://en.wikipedia.org/wiki/Device_file#Block_devices). A block device is a type of device from which blocks of data can be read from/written to at a time. Mounting `disk.img` as block device will allow creating partitions in it.
 ``` bash
 # Setup disk.img as first available loop device
-sudo losetup -f disk.img
-
-# List available loop devices, one of it should be disk.img
-sudo losetup -l
+sudo losetup --find --show disk.img
 ```
-Note the full path of the loop device. On the tutorial machine it was `/dev/loop0`. Let's continue partitioning:
+> - `find` = Finds the first unused loop device
+> - `show` = Show the name of the loop device `disk.img` is attached to
+Note the full path of the loop device. On the tutorial machine it was `/dev/loop0`. Operaing on `/dev/loop0` will operate on the `disk.img`. Let's continue partitioning:
 ``` bash
 # Create 64MB primary partition
 sudo parted --align minimal /dev/loop0 mkpart primary ext4 0 50%
