@@ -39,13 +39,13 @@ scanning bus for devices...
 
 ## Setup
 
-### Backend Driver `-blockdev driver=file,filename=../disk.img,node-name=disk`
+### Backend Driver: `-blockdev driver=file,filename=../disk.img,node-name=disk`
 
 - `driver=file` = Indicates that the backend driver is driver capable of handling a file
 - `filename` = Path to the disk image
 - `node-name` = An identifier so that this backend driver can be referred in other nodes
 
-### Device Front End `-device virtio-blk-device,drive=disk`
+### Device Front End: `-device virtio-blk-device,drive=disk`
 
 - `virtio-blk-device` = A block device for `virt` machine
 - `drive` = Name of the backend that will be manipulated by the front end
