@@ -1,9 +1,4 @@
-To properly load Linux kernel in QEMU, additional storage is required that will hold the following:
-1. U-Boot environment to load Linux kernel and specify Linux kernel command line.
-2. Linux kernel binary.
-3. Filesystem where Linux will boot.
-
-This section of the tutorial will prepare the storage for Linux booting.
+A storage is needed to hold the Linux kernel. This section will prepare the storage and copy necessary files in it. As we'll be running everything virtually, the storage will also be virtual.
 
 # Creating Storage
 
