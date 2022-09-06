@@ -35,17 +35,19 @@ scanning bus for devices...
 
 # What's Happening?
 
-`disk.img` is a block device. In [QEMU a block device](https://qemu-project.gitlab.io/qemu/system/invocation.html#hxtool-1) should be represneted by two things: a [backend driver](https://qemu-project.gitlab.io/qemu/system/device-emulation.html#device-back-end) and a [device front end](https://qemu-project.gitlab.io/qemu/system/device-emulation.html#device-front-end). The `blockdev` parameter specifies a backend driver and the `device` parameter specifies a device front end that the guest sees.
+`disk.img` is a block device. In [QEMU a block device](https://qemu-project.gitlab.io/qemu/system/invocation.html#hxtool-1) should be represneted by two things: a [device back end](https://qemu-project.gitlab.io/qemu/system/device-emulation.html#device-back-end) and a [device front end](https://qemu-project.gitlab.io/qemu/system/device-emulation.html#device-front-end). The `blockdev` parameter specifies a device back end and the `device` parameter specifies a device front end that the guest sees.
 
 ## Setup
 
-### Backend Driver: `-blockdev driver=file,filename=../disk.img,node-name=disk`
+### Device Back End
+`-blockdev driver=file,filename=../disk.img,node-name=disk`
 
 - `driver=file` = Indicates that the backend driver is driver capable of handling a file
 - `filename` = Path to the disk image
 - `node-name` = An identifier so that this backend driver can be referred in other nodes
 
-### Device Front End: `-device virtio-blk-device,drive=disk`
+### Device Front End
+`-device virtio-blk-device,drive=disk`
 
 - `virtio-blk-device` = A block device for `virt` machine
 - `drive` = Name of the backend that will be manipulated by the front end
