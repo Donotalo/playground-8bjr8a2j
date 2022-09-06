@@ -34,4 +34,31 @@ The system can now be run by the following command:
 ./run-u-boot.sh
 ```
 
+By overserving the console output, it can be seen that OpenSBI and U-Boot is loaded and being executed. Here's the part of the output of the test machine that shows U-Boot:
+```
+U-Boot 2022.07 (Aug 30 2022 - 15:41:35 +0100)
+
+CPU:   rv64imafdcsuh
+Model: riscv-virtio,qemu
+DRAM:  1 GiB
+Core:  25 devices, 13 uclasses, devicetree: board
+Flash: 32 MiB
+Loading Environment from nowhere... OK
+In:    uart@10000000
+Out:   uart@10000000
+Err:   uart@10000000
+Net:   No ethernet found.
+Hit any key to stop autoboot:  0 
+
+Device 0: unknown device
+scanning bus for devices...
+
+Device 0: unknown device
+No ethernet found.
+No ethernet found.
+=> 
+```
+
+`=>` is the default U-Boot prompt. U-Boot is ready to take commands. Type `help` and press `Enter` to see available commands. Try some of the commands and see U-Boot's responses.
+
 QEMU can be exited by pressing `Ctrl+A` followed by `X`.
