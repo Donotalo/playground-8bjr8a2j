@@ -1,7 +1,6 @@
 QEMU needs to be prepared so that it can run `RISC-V` executable file. As a reference how to do stuff, QEMU will be built from the source code.
 
-For this tutorial, QEMU `v7.0.0` is used. Let's checkout the source code and build QEMU for RISC-V.
-
+For this tutorial, QEMU `v7.0.0` is used. Let's checkout the source code and build QEMU for RISC-V. Run the following in the root working directory:
 ``` bash
 # Download source code
 git clone https://gitlab.com/qemu-project/qemu.git
