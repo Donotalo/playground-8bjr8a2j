@@ -29,7 +29,7 @@ ext4load virtio 0:1 84000000 Image
 ```
 This command loads data from ext4 filesystem.
 > - `virtio` = Name of the interface to read from
-> - `0:1` = Read from 1st available device's 1st partition
+> - `0:1` = Read from 1st available device's 1st partition (the device number starts from `0`, the partition number starts from `1`)
 > - `84000000` = A hexadecimal number, this is the address in RAM where the file will be loaded
 > - `Image` = Name of the file to be loaded into RAM
 
