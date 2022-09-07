@@ -12,6 +12,7 @@ dd if=/dev/zero of=disk.img bs=1M count=128
 > - `of` = Output file (write to this file)
 > - `bs` = Reads/writes up to this amount of bytes at a time
 > - `count` = Copy only this many input block from `if`
+> 
 > The file `disk.img` will be a `bs`x`count` bytes file containing only 0x00.
 
 # Creating Partitions
@@ -70,7 +71,7 @@ sudo parted /dev/loop0 set 1 boot on
 
 The Linux kernel was built from source for `RISC-V`. Now we've some storage (`disk.img`) ready where the kernel can reside.
 ``` bash
-# Mount the boot partition
+# Mount the 1st partition
 sudo mkdir /mnt/boot
 sudo mount /dev/loop0p1 /mnt/boot
 
