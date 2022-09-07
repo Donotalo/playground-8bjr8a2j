@@ -18,3 +18,8 @@ make PLATFORM=generic FW_PAYLOAD_PATH=../u-boot/u-boot.bin -j$(nproc)
 cd ../qemu/
 ./run-u-boot.sh
 ```
+
+The autoboot feature of U-Boot will proceed and start the kernel!
+
+# What's Happening?
+
