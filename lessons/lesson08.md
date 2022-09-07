@@ -47,8 +47,7 @@ sudo parted /dev/loop0 print
 > - `mkpart` = `parted` command to create partition
 > - `primary` = To make primary partition
 > - `ext4` = Type of the filesystem
-> - `0` = Beginning of the partition
-> - `100%` = End of the partition
+> - `0 50%` / `51% 100%` = Beginning / end of the partition
 
 # Formatting the Partitions
 
