@@ -19,7 +19,7 @@ cd ../qemu/
 ./run-u-boot.sh
 ```
 
-The autoboot feature of U-Boot will proceed and start the kernel! Well, it crashed and not usable, but at least U-Boot is able to load the kernel.
+The autoboot feature of U-Boot will proceed and start the kernel! Well, the kernel will crash and not usable, but at least U-Boot is able to load and run it.
 
 # What's Happening?
 
