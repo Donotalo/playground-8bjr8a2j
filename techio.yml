@@ -28,7 +28,7 @@ plan:
   statement: /lessons/lesson07.md
 - title: Preparing Bootable Linux Kernel Storage Media
   statement: /lessons/lesson08.md
-- title: Booting Linux Kernel
+- title: Storage Media-Aware QEMU
   statement: /lessons/lesson09.md
 - title: TBD
   statement: /lessons/lesson10.md
