@@ -1,4 +1,4 @@
-A storage is needed to hold the Linux kernel. This section will prepare the storage and copy necessary files in it. As we'll be running everything virtually, the storage will also be virtual.
+A storage is needed that can contain the Linux kernel. This section will prepare the storage and copy necessary files in it. As we'll be running everything virtually, the storage will also be virtual.
 
 # Creating Storage
 
