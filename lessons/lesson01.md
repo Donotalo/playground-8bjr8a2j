@@ -24,8 +24,8 @@ The readers are requested to install necessary software in their host machine to
 
 Following tutorials and references are handy, but not required to understand this playground.
 - Embedded Linux Booting Process: [Embedded Linux Booting Process](https://www.youtube.com/watch?v=DV5S_ZSdK0s)
-- [Device Tree for Dummies!](https://www.youtube.com/watch?v=m_NyYEBxfn8)
-- [Device Tree: hardware description for everybody!](https://www.youtube.com/watch?v=Nz6aBffv-Ek)
+- Device Tree for Dummies!: [Device Tree for Dummies!](https://www.youtube.com/watch?v=m_NyYEBxfn8)
+- Device Tree: hardware description for everybody!: [Device Tree: hardware description for everybody!](https://www.youtube.com/watch?v=Nz6aBffv-Ek)
 - [Device Tree Specifications](https://www.devicetree.org/specifications/)
 
 Let's start.
