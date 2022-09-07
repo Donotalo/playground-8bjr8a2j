@@ -29,8 +29,14 @@ ext4load virtio 0:1 84000000 Image
 ```
 This command loads data from ext4 filesystem.
 > - `virtio` = Name of the interface to read from
-> - `0:1` = Read from
+> - `0:1` = Read from 1st available device's 1st partition
+> - `84000000` = A hexadecimal number, this is the address in RAM where the file will be loaded
+> - `Image` = Name of the file to be loaded into RAM
 
 ```
 booti 0x84000000 - ${fdtcontroladdr}
 ```
+This command executes Linux Image format from memory.
+> - `0x84000000` = Location where Linux Image is stored
+> - `-` = Unused parameter, used to be address of initrd (initial RAM disk)
+> - `${fdtcontroladdr}` = A variable holding the address of the FDT in memory
