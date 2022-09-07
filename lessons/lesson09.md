@@ -44,7 +44,7 @@ scanning bus for devices...
 ### Device Back End
 `-blockdev driver=file,filename=../disk.img,node-name=disk`
 
-- `driver=file` = Indicates that the back end driver is a driver capable of handling a file
+- `driver=file` = Indicates that the back end is a file
 - `filename` = Path to the disk image that will act as the back end
 - `node-name` = An identifier so that this backend driver can be referred in other nodes
 
