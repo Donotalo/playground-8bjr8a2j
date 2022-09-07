@@ -36,7 +36,7 @@ This command loads data from ext4 filesystem.
 ```
 booti 0x84000000 - ${fdtcontroladdr}
 ```
-This command executes Linux Image format from memory.
+This command boots Linux Image format from memory.
 > - `0x84000000` = Location where Linux Image is stored
 > - `-` = Unused parameter, used to be address of initrd (initial RAM disk)
 > - `${fdtcontroladdr}` = A variable holding the address of the FDT in memory
