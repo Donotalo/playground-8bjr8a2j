@@ -12,10 +12,11 @@ dd if=/dev/zero of=disk.img bs=1M count=128
 > - `of` = Output file (write to this file)
 > - `bs` = Reads/writes up to this amount of bytes at a time
 > - `count` = Copy only this many input block from `if`
-
-Two partitions will be created on the disk image `disk.img`. The first partition will be bootable.
+> The file `disk.img` will be a `bs`x`count` bytes file containing only 0x00.
 
 # Creating Partitions
+
+Two partitions will be created on the disk image `disk.img`. The first partition will be bootable.
 
 [`parted`](https://linux.die.net/man/8/parted) will be used to create partitions in the image `disk.img`. Create a partition table in the image:
 ``` bash
