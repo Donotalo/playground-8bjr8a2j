@@ -9,4 +9,10 @@ U-Boot configuration options will be loaded to the terminal. Navigate to Boot op
 ```
 ext4load virtio 0:1 84000000 Image; booti 0x84000000 - ${fdtcontroladdr}
 ```
-Exit the configuration utility and save the configuration.
+
+Save the configuration and exit the configuration utility. Now build U-Boot and build OpenSBI embedding U-Boot binary:
+``` bash
+make -j$(nproc)
+cd ../opensbi/
+make PLATFORM=generic FW_PAYLOAD_PATH=../u-boot/u-boot.bin -j$(nproc)
+```
