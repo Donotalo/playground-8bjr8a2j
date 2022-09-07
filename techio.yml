@@ -26,7 +26,7 @@ plan:
   statement: /lessons/lesson06.md
 - title: Preparing Linux Kernel
   statement: /lessons/lesson07.md
-- title: Preparation for Booting Linux Kernel
+- title: Preparing Bootable Linux Kernel Storage Media
   statement: /lessons/lesson08.md
 - title: Booting Linux Kernel
   statement: /lessons/lesson09.md
