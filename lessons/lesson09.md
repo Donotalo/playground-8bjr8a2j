@@ -46,7 +46,7 @@ scanning bus for devices...
 
 - `driver=file` = Indicates that the back end is a file
 - `filename` = Path to the disk image that will act as the back end
-- `node-name` = An identifier so that this backend driver can be referred in other nodes
+- `node-name` = An identifier so that this back end driver can be referred in other nodes
 
 ### Device Front End
 `-device virtio-blk-device,drive=disk`
