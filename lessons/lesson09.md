@@ -51,7 +51,7 @@ scanning bus for devices...
 ### Device Front End
 `-device virtio-blk-device,drive=disk`
 
-- `virtio-blk-device` = A block device for `virt` machine
+- `virtio-blk-device` = This is a block device for `virt` machine
 > To get a list of devices QEMU supports, run `./build/qemu-system-riscv64 -device help`.
 > 
 > To get further help on `virtio-blk-device`, run `./build/qemu-system-riscv64 -device virtio-blk-device,help`
