@@ -1,4 +1,4 @@
-The OpenSBI firmware that loads U-Boot in QEMU - all binaries are ready now.
+The OpenSBI firmware that loads U-Boot in QEMU - all executables are ready now.
 
 Let's create a script file for executing QEMU. From the root working directory, run the following:
 ``` bash
