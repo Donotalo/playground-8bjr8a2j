@@ -23,7 +23,7 @@ The autoboot feature of U-Boot will proceed and start the kernel! Well, the kern
 
 # What's Happening?
 
-Autoboot is set, it executed the commands set in the *environment variable* `bootcmd`. Commands can be separated by semicolon. We've set 2 commands: `ext4load` and `booti`.
+As autoboot is set, it executed the commands set in the *environment variable* `bootcmd`. Commands can be separated by semicolon. We've set 2 commands: `ext4load` and `booti`.
 ```
 ext4load virtio 0:1 84000000 Image
 ```
