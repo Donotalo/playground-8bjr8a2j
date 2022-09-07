@@ -30,5 +30,5 @@ plan:
   statement: /lessons/lesson08.md
 - title: Storage Media-Aware QEMU
   statement: /lessons/lesson09.md
-- title: TBD
+- title: Running Linux Kernel
   statement: /lessons/lesson10.md
