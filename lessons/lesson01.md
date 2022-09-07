@@ -23,7 +23,7 @@ This tutorial is inspired by and heavily followed the contents of this amazing t
 The readers are requested to install necessary software in their host machine to try the scripts of this tutorial. This tutorial is developed on `Debian 11.4`.
 
 Following tutorials and references are handy, but not required to understand this playground.
-- [Embedded Linux Booting Process](https://www.youtube.com/watch?v=DV5S_ZSdK0s)
+- Embedded Linux Booting Process: [Embedded Linux Booting Process](https://www.youtube.com/watch?v=DV5S_ZSdK0s)
 - [Device Tree for Dummies!](https://www.youtube.com/watch?v=m_NyYEBxfn8)
 - [Device Tree: hardware description for everybody!](https://www.youtube.com/watch?v=Nz6aBffv-Ek)
 - [Device Tree Specifications](https://www.devicetree.org/specifications/)
