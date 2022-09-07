@@ -9,10 +9,11 @@ git clone https://gitlab.com/qemu-project/qemu.git
 cd qemu
 git checkout v7.0.0
 
-# Build QEMU for RISC-V
+# Prepare QEMU for build
 git submodule init
 git submodule update --recursive
 
+# Build QEMU for RISC-V
 ./configure --target-list=riscv64-softmmu
 make -j$(nproc)
 ```
