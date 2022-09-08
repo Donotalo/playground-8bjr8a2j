@@ -1,4 +1,4 @@
-OpenSBI acts as a layer between the hardware and Operating System running in S-Mode for `RISC-V`. It helps to get access to hardware from the Operating System. This tutorial uses `v1.1` of OpenSBI.
+[OpenSBI](https://github.com/riscv-software-src/opensbi) acts as a layer between the hardware and Operating System running in S-Mode for `RISC-V`. It helps to get access to hardware from the Operating System. This tutorial uses `v1.1` of OpenSBI.
 
 Run the following from the root working directory:
 ``` bash
