@@ -34,7 +34,7 @@ The system can now be run by the following command:
 ./run-u-boot.sh
 ```
 
-By overserving the console output, it can be seen that OpenSBI and U-Boot is loaded and being executed. Here's part of the output on the test machine that shows that U-Boot is running:
+By overserving the console output, it can be seen that OpenSBI and U-Boot are loaded and being executed. Here's part of the output on the test machine that shows that U-Boot is running:
 ```
 U-Boot 2022.07 (Aug 30 2022 - 15:41:35 +0100)
 
