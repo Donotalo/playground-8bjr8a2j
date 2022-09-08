@@ -45,10 +45,11 @@ Select the following options:
     1. GCC compiler Version > gcc 11.x
 
 Exit and save the configuration. Build the toolchain:
-
 ``` bash
-make sdk
+make sdk -j$(nproc)
 ```
+> - `-j$(nproc)` = `$(nproc)` will expand to number of available processing units, `-j` flag will paralellize build utilizing the output indicated by `$(nproc)`
+
 
 The output is the file `output/images/riscv64-buildroot-linux-musl_sdk-buildroot.tar.gz`. Extract it:
 
