@@ -97,4 +97,4 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
-This confirms that the necessary toolchain has been installed.
+This confirms that the necessary toolchain has been installed and added to the system path.
