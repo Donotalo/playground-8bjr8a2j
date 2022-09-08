@@ -1,6 +1,11 @@
 A disk image is ready with Linux kernel. We need a way to make QEMU aware of the presence of this disk. If QEMU can correctly identify the disk, it will pass the information to U-Boot and U-Boot will be able to find the partitions in it.
 
-> How? When QEMU is compiled, it creates a device tree binary and passes it to U-Boot. A device tree is a description of all hardware of the host. In memory the device tree is organized as flattened device tree (FDT).
+> How? When QEMU is compiled, it creates a device tree binary (dtb) and passes it to U-Boot. A device tree is a description of all hardware of the host. In memory the device tree is organized as flattened device tree (FDT).
+> 
+> ```
+> QEMU -- passes dtb --> OpenSBI -- passes dtb -->
+>   U-Boot -- parses dtb > finds disk > partitions > filesystem > kernel file
+> ```
 
 Run the following commands from the root working directory to add additional parameters to QEMU so that QEMU recognizes the disk image:
 ``` bash
