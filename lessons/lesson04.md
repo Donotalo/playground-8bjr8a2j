@@ -22,7 +22,7 @@ source tech.io-env.sh
 
 ## Download Source Code
 
-This tutorial will use U-Boot `v2022.07`. From the root working directory, run the following in the terminal:
+This tutorial will use [U-Boot](https://www.denx.de/wiki/U-Boot) `v2022.07`. From the root working directory, run the following in the terminal:
 
 ``` bash
 # Download U-Boot source
