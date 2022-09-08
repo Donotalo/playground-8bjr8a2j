@@ -22,7 +22,7 @@ Save and close the file. Run the script:
 ``` bash
 ./run-u-boot.sh
 ```
-Observe that U-Boot has detected the disk as seen in the console output:
+Observe that U-Boot has detected the disk as seen in something like the following console output:
 ```
 ...
 Hit any key to stop autoboot:  0 
