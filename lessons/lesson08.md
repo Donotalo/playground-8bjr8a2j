@@ -38,7 +38,7 @@ Note the full path of the loop device. On the tutorial machine it was `/dev/loop
 ``` bash
 # Create a couple of primary partitions
 sudo parted --align minimal /dev/loop0 mkpart primary ext4 0 50%
-sudo parted --align minimal /dev/loop0 mkpart primary ext4 51% 100%
+sudo parted --align minimal /dev/loop0 mkpart primary ext4 50% 100%
 
 # Optional: inspect the partitions
 sudo parted /dev/loop0 print
@@ -47,7 +47,7 @@ sudo parted /dev/loop0 print
 > - `mkpart` = `parted` command to create partition
 > - `primary` = To make primary partition
 > - `ext4` = Type of the filesystem
-> - `0 50%` / `51% 100%` = Beginning / end of the partition
+> - `0 50%` / `50% 100%` = Beginning / end of the partition
 
 # Formatting the Partitions
 
