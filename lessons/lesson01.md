@@ -1,6 +1,6 @@
 # Confession
 
-I'm a beginner in the field of U-Boot and QEMU. I felt like it'd be good to have all the resources that I used to run U-Boot and Linux in QEMU in one place. I've written this tutorial with that in mind. At the same time I tried to make it as beginner friendly as possible. Feedback is welcome to improve the content of this tutorial. If time permits, I will also improve it over time.
+I'm a beginner in the field of U-Boot and QEMU. I felt like it'd be good to have all the resources that I used to run U-Boot and Linux in QEMU in one place. I've written this tutorial with that in mind. At the same time I tried to make it as beginner friendly as possible. If time permits, I will also improve it over time.
 
 # Prologue
 
