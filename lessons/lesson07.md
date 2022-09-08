@@ -1,6 +1,6 @@
 # Pre-requisites
 
-The build system of [Linux](https://www.linux.org/) kernel for RISC-V requires one more environment variable. Let's set it first. From the root working directory, run the following commands:
+The build system of [Linux kernel](https://kernel.org/) for RISC-V requires one more environment variable. Let's set it first. From the root working directory, run the following commands:
 ``` bash
 gedit tech.io-env.sh &
 ```
