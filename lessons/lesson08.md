@@ -7,7 +7,7 @@ Run the following command in terminal from root working directory to create stor
 # Create a 128 MB disk image
 dd if=/dev/zero of=disk.img bs=1M count=128
 ```
-> `dd` is a software that can be used to copy and convert files. [`/dev/zero`](https://unix.stackexchange.com/questions/63238/purpose-of-dev-zero) is a special file that acts like a stream or generator. Reading `/dev/zero` always gives `0x00`. Writing to it has no effect.
+> [`dd`](https://man7.org/linux/man-pages/man1/dd.1.html) is a software that can be used to copy and convert files. [`/dev/zero`](https://unix.stackexchange.com/questions/63238/purpose-of-dev-zero) is a special file that acts like a stream or generator. Reading `/dev/zero` always gives `0x00`. Writing to it has no effect.
 > - `if` = Input file (read from this file)
 > - `of` = Output file (write to this file)
 > - `bs` = Reads/writes up to this amount of bytes at a time
