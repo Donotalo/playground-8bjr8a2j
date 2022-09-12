@@ -59,6 +59,6 @@ No ethernet found.
 => 
 ```
 
-`=>` is the default U-Boot prompt. U-Boot is ready to take commands. Type `help` and press `Enter` to see available commands. Try some of the commands and see U-Boot's responses.
+`=>` is the default U-Boot prompt. U-Boot is ready to take commands. Type `help` and press `Enter` to see available commands. Try some of the commands and see U-Boot's responses. U-Boot will see the hardware that's provided by QEMU.
 
 QEMU can be exited by pressing `Ctrl+A` followed by `X`.
