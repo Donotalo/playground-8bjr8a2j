@@ -44,6 +44,7 @@ sudo parted --align minimal /dev/loop0 mkpart primary ext4 50% 100%
 sudo parted /dev/loop0 print
 ```
 > - `align` = Set partition alignment for optimum performance
+> - `/dev/loop0` = Device on which the operation will take place
 > - `mkpart` = `parted` command to create partition
 > - `primary` = To make primary partition
 > - `ext4` = Type of the filesystem
