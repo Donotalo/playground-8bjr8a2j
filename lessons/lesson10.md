@@ -39,4 +39,4 @@ booti 0x84000000 - ${fdtcontroladdr}
 This command boots Linux Image format from memory.
 > - `0x84000000` = Location where Linux Image is stored
 > - `-` = Unused parameter, used to be the address of [initrd](https://docs.kernel.org/admin-guide/initrd.html) (initial RAM disk)
-> - `${fdtcontroladdr}` = A variable holding the address of the FDT in memory
+> - `${fdtcontroladdr}` = A variable holding the address of the flattened device tree in memory
