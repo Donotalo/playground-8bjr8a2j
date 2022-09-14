@@ -16,6 +16,8 @@ Write the following in the `run-u-boot.sh`:
 -machine virt \
 -bios ../opensbi/build/platform/generic/firmware/fw_payload.elf
 ```
+> Note that this is a [multiline script](https://superuser.com/a/1634621). Each line should end with a backslash (`\`) for continuation.
+
 Save & close the file. Meaning of the [QEMU parameters](https://www.qemu.org/docs/master/system/invocation.html) are as follows:
 
 > - `smp` = Number of processing units
