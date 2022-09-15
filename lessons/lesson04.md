@@ -35,6 +35,8 @@ git checkout v2022.07
 
 ## Find Architecture Specific Configuration Files
 
+U-Boot needs to be built for the hardware on which it will run. U-Boot needs to know what's available in the hardware side (device tree) and how to use them (drivers). Each hardware configuration is different. U-Boot source tree has configuration file specific to each of the hardware that U-Boot supports. These files are also referred as board configuration file.
+
 This part isn't mandatory if the board configuration file is known.
 
 U-Boot stores board specific configuration files in the `configs` directory. Let's list available configuration files for RISC-V:
