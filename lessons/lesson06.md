@@ -23,7 +23,7 @@ Save & close the file. Meaning of the [QEMU parameters](https://www.qemu.org/doc
 > - `smp` = Number of processing units
 > - `m` = Total memory
 > - `nographic` = Graphics less environment
-> - `machine` = [QEMU virt machine for RISC-V](https://www.qemu.org/docs/master/system/riscv/virt.html) to be used
+> - `machine` = Specify the machine QEMU will emulate, here [QEMU virt machine for RISC-V](https://www.qemu.org/docs/master/system/riscv/virt.html) will be used
 > - `bios` = Path to the bios file
 
 Make the script file executable:
