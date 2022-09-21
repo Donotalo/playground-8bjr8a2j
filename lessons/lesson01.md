@@ -13,7 +13,7 @@ A fairly simple way is illustrated in this tutorial to run U-Boot and Linux kern
 # Useful Links
 
 - [U-Boot](https://www.denx.de/wiki/U-Boot) is a universal bootloader.
-- [Linux](https://www.linux.org/) is a free Operating System which can be run on many architectures.
+- [Linux](https://www.kernel.org/) is a free Operating System which can be run on many architectures.
 - [QEMU](https://www.qemu.org/) is a machine emulator.
 - [RISC-V](https://riscv.org/) is a free and open source instruction set hardware architecture.
   - RISC-V specifications: https://riscv.org/technical/specifications/
