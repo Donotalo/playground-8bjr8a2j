@@ -22,7 +22,7 @@ A fairly simple way is illustrated in this tutorial to run U-Boot and Linux kern
     - These are needed to cross compile (build for RISC-V from non-RISC-V machine, e.g., x86) for RISC-V hardware. However, this tutorial uses [Buildroot](https://buildroot.org/) to generate RISC-V build toolchain.
 - [OpenSBI](https://github.com/riscv-software-src/opensbi) is the open source implementation of supervisor binary interface recommended for RISC-V. It interfaces between Operating System and machine hardware running bootloader in M-mode (machine mode).
 
-The readers are requested to install necessary software in their host machine to try the scripts of this tutorial. This tutorial is developed on [Debian](https://www.debian.org/) 11.4.
+The readers are requested to install necessary software in their host machine to try the scripts of this tutorial. This tutorial is developed on [Debian](https://www.debian.org/) 11.5.
 
 Following tutorials and references are handy, but not required to understand this playground.
 - Video: [Embedded Linux Booting Process](https://www.youtube.com/watch?v=DV5S_ZSdK0s)
