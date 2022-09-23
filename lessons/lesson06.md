@@ -61,6 +61,10 @@ No ethernet found.
 =>
 ```
 
-`=>` is the default U-Boot prompt. U-Boot is ready to take commands. Type `help` and press `Enter` to see available commands. Try some of the commands and see U-Boot's responses. U-Boot will see the hardware that's provided by QEMU.
+`=>` is the default U-Boot prompt. U-Boot is ready to take commands. Type `help` and press `Enter` to see available commands. Try some of the commands and see U-Boot's responses. U-Boot will see the hardware that's provided by QEMU. Some commands to try:
+
+- `cpu detail` = Print all available CPUs in details
+- `fdt print /` = Print complete flattened device tree, this will list all hardware with all properties available in the system
+- `fstypes` = File system types that U-Boot's current build supports
 
 QEMU can be exited by pressing `Ctrl+A` followed by `X`.
