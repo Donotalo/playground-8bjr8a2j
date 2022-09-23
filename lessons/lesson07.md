@@ -40,7 +40,7 @@ grep --color=always -ni 'riscv' .config
 > - `--color=always` = Make the foreground color different for search terms
 > - `n` = Mention line number
 > - `i` = Ignore case
-> - `'riscv'` = Term to search for
+> - `'riscv'` = Pattern to search for
 > - `.config` = Name of the file to search
 
 Open the `.config` file.
