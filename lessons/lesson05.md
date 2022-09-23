@@ -11,7 +11,7 @@ git checkout v1.1
 # Build for generic platform with U-Boot as bootloader
 make PLATFORM=generic FW_PAYLOAD_PATH=../u-boot/u-boot.bin -j$(nproc)
 ```
-> - `PLATFORM=generic` = tells OpenSBI to build the firmware for *generic* platform, which isn't tied to any specific board. Rather, the hardware description comes from Flattened Device Tree (FDT) which is passed from previous boot stage.
+> - `PLATFORM=generic` = tells OpenSBI to build the firmware for *generic* platform, which isn't tied to any specific board. Rather, the hardware description comes from Flattened Device Tree (FDT) which is passed from previous boot stage. In other words, the firmware that loads OpenSBI will provide the list of devices available to the system.
 > - `FW_PAYLOAD_PATH` = tells OpenSBI the location of the firmware to be executed next.
 
 This tutorial will use the output file `build/platform/generic/firmware/fw_payload.elf` that `QEMU` can run. Because `FW_PAYLOAD_PATH` points to the u-boot, `U-Boot` is embedded in the output and `OpenSBI` will launch `U-Boot` automatically.
