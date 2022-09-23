@@ -63,4 +63,4 @@ ls arch/riscv/boot -lSh
 > - `S` = Sort by file size in descending order
 > - `h` = Print the sizes in easily readable format (using K/M/G for Kilo/Mega/Giga when appropriate)
 
-The output file is `Image` and a compressed copy of it is at `Image.gz`.
+The files `Image` and `Image.gz` are the build files. `Image.gz` is the compressed form of `Image`.
