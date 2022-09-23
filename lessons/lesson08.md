@@ -72,12 +72,12 @@ sudo parted /dev/loop0 set 1 boot on
 The Linux kernel was built from source for `RISC-V`. Now we've some storage (`disk.img`) ready where the kernel can reside.
 ``` bash
 # Mount the 1st partition
-sudo mkdir /mnt/boot
-sudo mount /dev/loop0p1 /mnt/boot
+sudo mkdir /mnt/uboot
+sudo mount /dev/loop0p1 /mnt/uboot
 
 # Copy the Linux kernel
-sudo cp linux-5.19.10/arch/riscv/boot/Image /mnt/boot
+sudo cp linux-5.19.10/arch/riscv/boot/Image /mnt/uboot
 
-# Unmount the boot partition to save the changes
-sudo umount /mnt/boot
+# Unmount the partition to save the changes
+sudo umount /mnt/uboot
 ```
