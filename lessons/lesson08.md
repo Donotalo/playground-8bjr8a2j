@@ -81,3 +81,11 @@ sudo cp linux-5.19.10/arch/riscv/boot/Image /mnt/uboot
 # Unmount the partition to save the changes
 sudo umount /mnt/uboot
 ```
+
+We're done with the loop device `/dev/loop0`. Detach it so that it can be used later:
+
+``` bash
+sudo losetup -d /dev/loop0
+```
+> - `d` = Option to detach a loop device
+> - `/dev/loop0` = Name of the loop device to detach
