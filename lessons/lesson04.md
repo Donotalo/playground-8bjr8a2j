@@ -2,19 +2,10 @@
 
 The `CROSS_COMPILE` environment variable needs to be defined to the prefix of the RISC-V gcc toolchain name that's added to the path. U-Boot build system will use this variable to correctly indentify the toolchain needed.
 
-Execute the following from the root working directory:
+The script below will append the line at the end of `tech.io-env.sh` and make it available. Execute the following from the root working directory:
 
 ``` bash
-# Open the script file containing environment variables
-gedit tech.io-env.sh &
-```
-
-Add the following line to the end of the file:
-```
-export CROSS_COMPILE=riscv64-linux-
-```
-Save and close the file. Execute it:
-``` bash
+echo "CROSS_COMPILE=riscv64-linux-" >> tech.io-env.sh
 source tech.io-env.sh
 ```
 
