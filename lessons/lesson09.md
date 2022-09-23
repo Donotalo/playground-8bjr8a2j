@@ -60,4 +60,4 @@ scanning bus for devices...
 > To get a list of devices QEMU supports, run `./build/qemu-system-riscv64 -device help`
 > 
 > To get further help on `virtio-blk-device`, run `./build/qemu-system-riscv64 -device virtio-blk-device,help`
-- `drive` = Name of the backend that will be manipulated by the front end
+- `drive` = Name of the back end that will be manipulated by the front end
