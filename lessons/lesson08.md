@@ -19,7 +19,7 @@ dd if=/dev/zero of=disk.img bs=1M count=128
 
 Two partitions will be created on the disk image `disk.img`. The first partition will be bootable.
 
-[`parted`](https://linux.die.net/man/8/parted) will be used to create partitions in the image `disk.img`. Create a partition table in the image:
+[`parted`](https://man7.org/linux/man-pages/man8/parted.8.html) will be used to create partitions in the image `disk.img`. Create a partition table in the image:
 ``` bash
 sudo parted disk.img mklabel gpt
 ```
