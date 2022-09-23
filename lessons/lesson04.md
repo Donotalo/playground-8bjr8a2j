@@ -5,7 +5,7 @@ The `CROSS_COMPILE` environment variable needs to be defined to the prefix of th
 The script below will append the line at the end of `tech.io-env.sh` and make it available. Execute the following from the root working directory:
 
 ``` bash
-echo "CROSS_COMPILE=riscv64-linux-" >> tech.io-env.sh
+echo "export CROSS_COMPILE=riscv64-linux-" >> tech.io-env.sh
 source tech.io-env.sh
 ```
 
