@@ -42,7 +42,7 @@ scanning bus for devices...
 
 # What's Happening?
 
-`disk.img` is a block device. In [QEMU a block device](https://qemu-project.gitlab.io/qemu/system/invocation.html#hxtool-1) should be represneted by two things: a [device back end](https://qemu-project.gitlab.io/qemu/system/device-emulation.html#device-back-end) and a [device front end](https://qemu-project.gitlab.io/qemu/system/device-emulation.html#device-front-end). The `blockdev` parameter specifies a device back end and the `device` parameter specifies a device front end that the guest sees. When the guest operates on the front end (e.g., reading a file), it actually reads some bytes from the back end.
+`disk.img` is a block device. In [QEMU a block device](https://qemu-project.gitlab.io/qemu/system/invocation.html#hxtool-1) should be represneted by two things: a [device back end](https://qemu-project.gitlab.io/qemu/system/device-emulation.html#device-back-end) and a [device front end](https://qemu-project.gitlab.io/qemu/system/device-emulation.html#device-front-end). The `blockdev` parameter specifies a device back end and the `device` parameter specifies a device front end that the guest sees. When the guest operates on the front end, e.g., reading a file, it actually reads some bytes from the back end.
 
 ## Setup
 
