@@ -2,9 +2,7 @@
 
 The build system of [Linux kernel](https://kernel.org/) for RISC-V requires one more environment variable. Let's set it first. From the root working directory, run the following commands:
 ``` bash
-# Append the line at the end of the file
 echo "export ARCH=riscv" >> tech.io-env.sh
-
 source tech.io-env.sh
 ```
 
