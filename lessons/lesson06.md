@@ -38,12 +38,12 @@ The system can now be run by the following command:
 
 By observing the console output, it can be seen that OpenSBI and U-Boot are loaded and being executed. Here's part of the output on the test machine that shows that U-Boot is running:
 ```
-U-Boot 2022.07 (Aug 30 2022 - 15:41:35 +0100)
+U-Boot 2022.07 (Sep 23 2022 - 09:51:06 +0100)
 
-CPU:   rv64imafdcsuh
+CPU:   rv64imafdch_zicsr_zifencei_zba_zbb_zbc_zbs
 Model: riscv-virtio,qemu
 DRAM:  1 GiB
-Core:  25 devices, 13 uclasses, devicetree: board
+Core:  26 devices, 13 uclasses, devicetree: board
 Flash: 32 MiB
 Loading Environment from nowhere... OK
 In:    uart@10000000
@@ -58,7 +58,7 @@ scanning bus for devices...
 Device 0: unknown device
 No ethernet found.
 No ethernet found.
-=> 
+=>
 ```
 
 `=>` is the default U-Boot prompt. U-Boot is ready to take commands. Type `help` and press `Enter` to see available commands. Try some of the commands and see U-Boot's responses. U-Boot will see the hardware that's provided by QEMU.
