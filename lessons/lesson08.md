@@ -76,7 +76,7 @@ sudo mkdir /mnt/boot
 sudo mount /dev/loop0p1 /mnt/boot
 
 # Copy the Linux kernel
-sudo cp linux-5.19.8/arch/riscv/boot/Image /mnt/boot
+sudo cp linux-5.19.10/arch/riscv/boot/Image /mnt/boot
 
 # Unmount the boot partition to save the changes
 sudo umount /mnt/boot
