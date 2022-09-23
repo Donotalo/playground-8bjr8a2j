@@ -55,4 +55,12 @@ and searching for `ARCH` and `CROSS_COMPILE`.
 
 ## Output Files
 
-The output file is `arch/riscv/boot/Image` and a compressed copy of it is at `arch/riscv/boot/Image.gz`.
+List the output files:
+``` bash
+ls arch/riscv/boot -lSh
+```
+> - `l` = List details
+> - `S` = Sort by file size in descending order
+> - `h` = Print the sizes in easily readable format (using K/M/G for Kilo/Mega/Giga when appropriate)
+
+The output file is `Image` and a compressed copy of it is at `Image.gz`.
