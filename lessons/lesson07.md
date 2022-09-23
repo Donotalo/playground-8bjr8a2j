@@ -33,6 +33,16 @@ make -j$(nproc)
 
 ## Did it Compile for RISC-V?
 
+Search the `.config` file for the presence of RISC-V:
+``` bash
+grep --color=always -ni 'riscv' .config
+```
+> - `--color=always` = Make the foreground color different for search terms
+> - `n` = Mention line number
+> - `i` = Ignore case
+> - `'riscv'` = Term to search for
+> - `.config` = Name of the file to search
+
 Open the `.config` file.
 ``` bash
 gedit .config &
