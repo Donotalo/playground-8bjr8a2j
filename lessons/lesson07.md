@@ -43,10 +43,6 @@ grep --color=always -ni 'riscv' .config
 > - `'riscv'` = Pattern to search for
 > - `.config` = Name of the file to search
 
-Open the `.config` file.
-``` bash
-gedit .config &
-```
 Observe that the RISC-V configuration option is enabled:
 ```
 CONFIG_RISCV=y
