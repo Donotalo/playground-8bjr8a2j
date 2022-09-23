@@ -82,7 +82,7 @@ Write the following in the `tech.io-env.sh` file:
 export PATH=~/tech.io/toolchain/riscv64-buildroot-linux-musl_sdk-buildroot/bin:$PATH
 ```
 
-Update & test:
+Update environment variable by running the script using [source](https://superuser.com/questions/46139/what-does-source-do) & test:
 
 ``` bash
 source tech.io-env.sh
