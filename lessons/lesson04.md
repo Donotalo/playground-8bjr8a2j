@@ -1,6 +1,6 @@
 # Pre-requisites
 
-The `CROSS_COMPILE` variable needs to be added to environment variable. `CROSS_COMPILE` should be a prefix to the RISC-V gcc toolchain name that's added to the path. U-Boot build system will use this variable to correctly indentify the toolchain needed.
+The `CROSS_COMPILE` environment variable needs to be defined to the prefix of the RISC-V gcc toolchain name that's added to the path. U-Boot build system will use this variable to correctly indentify the toolchain needed.
 
 Execute the following from the root working directory:
 
