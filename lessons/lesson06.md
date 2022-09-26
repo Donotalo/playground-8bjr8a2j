@@ -61,6 +61,10 @@ No ethernet found.
 =>
 ```
 
+QEMU can be exited by pressing `Ctrl+A` followed by `X`.
+
+# A Little More on U-Boot
+
 `=>` is the default U-Boot prompt. U-Boot is ready to take commands. Type `help` and press `Enter` to see available commands. Try some of the commands and see U-Boot's responses. U-Boot will see the hardware that's provided by QEMU. Some commands to try:
 
 - `cpu detail` = Print detailed CPU information
@@ -68,4 +72,33 @@ No ethernet found.
 - `fdt print /` = Print complete flattened device tree, this will list all hardware with all properties available in the system
 - `fstypes` = File system types that U-Boot's current build supports
 
-QEMU can be exited by pressing `Ctrl+A` followed by `X`.
+On the tutorial machine, the `bdinfo` command reveals the following details about the board that QEMU has supplied to U-Boot:
+```
+=> bdinfo
+boot_params = 0x0000000000000000
+DRAM bank   = 0x0000000000000000
+-> start    = 0x0000000080000000
+-> size     = 0x0000000040000000
+flashstart  = 0x0000000020000000
+flashsize   = 0x0000000002000000
+flashoffset = 0x0000000000000000
+baudrate    = 115200 bps
+relocaddr   = 0x00000000bff59000
+reloc off   = 0x000000003fd59000
+Build       = 64-bit
+current eth = unknown
+ethaddr     = (not set)
+IP addr     = <NULL>
+fdt_blob    = 0x00000000bf7378d0
+new_fdt     = 0x00000000bf7378d0
+fdt_size    = 0x0000000000001520
+lmb_dump_all:
+ memory.cnt  = 0x1
+ memory[0]	[0x80000000-0xbfffffff], 0x40000000 bytes flags: 0
+ reserved.cnt  = 0x2
+ reserved[0]	[0x80000000-0x8007ffff], 0x00080000 bytes flags: 0
+ reserved[1]	[0xbf736480-0xbfffffff], 0x008c9b80 bytes flags: 0
+devicetree  = board
+```
+
+It can be found that the RAM start address and size are `0x80000000` and `0x40000000` (1 GB) respectively. This information is important as various data are needed to be placed within this address range.
