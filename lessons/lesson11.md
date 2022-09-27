@@ -23,5 +23,5 @@ From the configuration screen, set the following:
 
 Exit and save the configutation when prompted. Build it:
 ``` bash
-make -j$(nproc)
+make
 ```
