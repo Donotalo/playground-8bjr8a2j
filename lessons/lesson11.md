@@ -50,3 +50,15 @@ sudo umount /mnt/uboot
 # Release /dev/loop0 to be used later
 sudo losetup -d /dev/loop0
 ```
+
+# Modify U-Boot
+
+Linux kernel can be called with arguments. In the arguments, the location of root file system can be specified. Let's modify U-Boot to setup this arguments.
+
+Run the follwing from the root working directory:
+``` bash
+
+```
+
+1. From `Boot options`, set `Enable boot arguments`.
+    1. Set the follwing in the `Boot arguments`: 
