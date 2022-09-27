@@ -57,7 +57,7 @@ Linux kernel can be called with arguments. In the arguments, the location of roo
 
 Run the follwing from the root working directory:
 ``` bash
-
+todo
 ```
 
 1. From `Boot options`, set `Enable boot arguments`.
