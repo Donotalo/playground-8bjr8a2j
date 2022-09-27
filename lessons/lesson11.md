@@ -2,7 +2,7 @@ The reason Linux kernel couldn't boot in last chapter is because the [root file 
 
 Let's provide a root file system so that Linux can boot.
 
-# Building Root File System
+# Build the Root File System
 
 ## Buildroot
 
@@ -27,3 +27,26 @@ make
 ```
 
 The output file is `./output/images/rootfs.tar.lz4`.
+
+# Copy the Root File System to Disk
+
+The root file system needs to be available to U-Boot. Let's copy it in the `disk.img` image. Run the following from the root working directory:
+``` bash
+sudo losetup --find --show --partscan disk.img
+```
+> - `partscan` = Scan the image `disk.img` for partition and attach each partition to a separate loop device
+
+On the tutorial machine, the image is attached to the `/dev/loop0` loop device. The partition numbers can be confirmed by:
+``` bash
+ls -l /dev/loop0*
+```
+
+On the tutorial machine, the partitions are `/dev/loop0p1` and `/dev/loop0p2`. Now we've a way to copy files to `disk.img`. Run the following in the terminal to copy the root file system in partition 2:
+``` bash
+sudo mount /dev/loop0p2 /mnt/uboot
+sudo cp buildroot-2022.05.2/output/images/rootfs.tar.lz4 /mnt/uboot
+sudo umount /mnt/uboot
+
+# Release /dev/loop0 to be used later
+sudo losetup -d /dev/loop0
+```
