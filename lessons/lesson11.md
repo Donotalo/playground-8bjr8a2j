@@ -25,3 +25,5 @@ Exit and save the configutation when prompted. Build it:
 ``` bash
 make
 ```
+
+The output file is `./output/images/rootfs.tar.lz4`.
