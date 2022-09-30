@@ -76,7 +76,7 @@ sudo mkdir /mnt/uboot
 sudo mount /dev/loop0p1 /mnt/uboot
 
 # Copy the Linux kernel
-sudo cp linux-5.19.10/arch/riscv/boot/Image /mnt/uboot
+sudo cp linux-5.19.12/arch/riscv/boot/Image /mnt/uboot
 
 # Unmount the partition to save the changes
 sudo umount /mnt/uboot
