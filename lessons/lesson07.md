@@ -37,7 +37,6 @@ Search the `.config` file for the presence of RISC-V:
 ``` bash
 grep --color=always -ni 'riscv' .config
 ```
-> - `--color=always` = Make the foreground color different for search terms
 > - `n` = Mention line number
 > - `i` = Ignore case
 > - `'riscv'` = Pattern to search for
