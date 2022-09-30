@@ -36,6 +36,8 @@ U-Boot stores board specific configuration files in the `configs` directory. Let
 ``` bash
 ls configs | grep riscv --color=always
 ```
+> - `--color=always` = Make the foreground color different for search terms
+
 This generates the following output:
 ```
 openpiton_riscv64_defconfig
