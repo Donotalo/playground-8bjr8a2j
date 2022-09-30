@@ -1,6 +1,6 @@
 # Pre-requisites
 
-The build system of [Linux kernel](https://kernel.org/) for RISC-V requires one more environment variable. Let's set it first. From the root working directory, run the following commands:
+The build system of [Linux kernel](https://kernel.org/) for RISC-V requires `ARCH` environment variable to be set to `riscv`. Let's set it first. From the root working directory, run the following commands:
 ``` bash
 echo "export ARCH=riscv" >> tech.io-env.sh
 source tech.io-env.sh
@@ -8,14 +8,14 @@ source tech.io-env.sh
 
 # Build Linux Kernel
 
-Let's download and build Linux kernel from source code. Linux `v5.19.10` will be used for this tutorial. Run the following from the root working directory:
+Let's download and build Linux kernel from source code. Linux `v5.19.12` will be used for this tutorial. Run the following from the root working directory:
 ``` bash
 # Download the compressed file that contains Linux source code
-wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.19.10.tar.xz
+wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.19.12.tar.xz
 
 # Extract and enter into directory
-tar xf linux-5.19.10.tar.xz
-cd linux-5.19.10/
+tar xf linux-5.19.12.tar.xz
+cd linux-5.19.12/
 ```
 
 Linux kernel will be built for `RISC-V` architecture. The default configurations for several targets can be obtained by the command below:
