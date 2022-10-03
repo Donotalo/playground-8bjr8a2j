@@ -26,7 +26,7 @@ git checkout v2022.07
 
 ## Board Configuration Files
 
-U-Boot needs to be built for the hardware on which it will run. U-Boot needs to know what's available in the hardware side (device tree) and how to use them (drivers). Each hardware configuration is different. U-Boot source tree has configuration file specific to each of the hardware that U-Boot supports. These files are also referred as board configuration file.
+U-Boot needs to be built for the hardware on which it will run. U-Boot needs to know what's available in the hardware side (device tree) and how to use them (drivers). Each hardware configuration is different. U-Boot source tree has configuration file specific to each of the hardware that U-Boot supports. These files are also referred as board configuration file. Support for additional hardware can be made by creating separate board configuration file.
 
 ## Find Architecture Specific Configuration Files
 
