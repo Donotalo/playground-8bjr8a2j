@@ -11,7 +11,7 @@ source tech.io-env.sh
 Let's download and build Linux kernel from source code. Linux `v6.0` will be used for this tutorial. Run the following from the root working directory:
 ``` bash
 # Download the compressed file that contains Linux source code
-wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-6.0.tar.xz
+wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.0.tar.xz
 
 # Extract and enter into directory
 tar xf linux-6.0.tar.xz
