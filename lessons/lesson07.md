@@ -1,4 +1,4 @@
-# Pre-requisites
+# Pre-requisites--
 
 The build system of [Linux kernel](https://kernel.org/) for RISC-V requires `ARCH` environment variable to be set to `riscv`. Let's set it first. From the root working directory, run the following commands:
 ``` bash
