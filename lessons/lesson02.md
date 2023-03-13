@@ -40,9 +40,9 @@ Select the following options:
     1. Target Architecture Size > 64-bit
 1. Toolchain
     1. C library > musl
-    1. Kernel Headers > Linux 5.17.x kernel headers
-    1. Binutils Version > binutils 2.38
-    1. GCC compiler Version > gcc 11.x
+    1. Kernel Headers > Linux 6.1.x kernel headers
+    1. Binutils Version > binutils 2.39
+    1. GCC compiler Version > gcc 12.x
 
 Exit and save the configuration. Build the toolchain:
 ``` bash
@@ -58,7 +58,7 @@ The output is the file `output/images/riscv64-buildroot-linux-musl_sdk-buildroot
 cd ..
 mkdir toolchain && cd toolchain
 
-tar xf ../buildroot-2022.05.2/output/images/riscv64-buildroot-linux-musl_sdk-buildroot.tar.gz
+tar xf ../buildroot-2023.02/output/images/riscv64-buildroot-linux-musl_sdk-buildroot.tar.gz
 ```
 
 All the important binaries are now in `riscv64-buildroot-linux-musl_sdk-buildroot/bin` directory. The RISC-V compier is `riscv64-linux-gcc`. Fix the hardcoded paths by running the script:
