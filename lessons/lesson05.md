@@ -1,4 +1,4 @@
-[OpenSBI](https://github.com/riscv-software-src/opensbi) acts as a layer between the hardware and Operating System running in S-Mode for `RISC-V`. It helps to get access to hardware from the Operating System. This tutorial uses `v1.1` of OpenSBI. [Check the RISC-V SBI specs](https://github.com/riscv-non-isa/riscv-sbi-doc) for details.
+[OpenSBI](https://github.com/riscv-software-src/opensbi) acts as a layer between the hardware and Operating System running in S-Mode for `RISC-V`. It helps to get access to hardware from the Operating System. This tutorial uses `v1.2` of OpenSBI. [Check the RISC-V SBI specs](https://github.com/riscv-non-isa/riscv-sbi-doc) for details.
 
 Run the following from the root working directory:
 ``` bash
@@ -6,7 +6,7 @@ Run the following from the root working directory:
 git clone https://github.com/riscv-software-src/opensbi.git
 
 cd opensbi
-git checkout v1.1
+git checkout v1.2
 
 # Build for generic platform with U-Boot as bootloader
 make PLATFORM=generic FW_PAYLOAD_PATH=../u-boot/u-boot.bin -j$(nproc)
