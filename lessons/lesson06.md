@@ -68,10 +68,10 @@ QEMU can be exited by pressing `Ctrl+A` followed by `X`.
 
 `=>` is the default U-Boot prompt. U-Boot is ready to take commands. Type `help` and press `Enter` to see available commands. Try some of the commands and see U-Boot's responses. U-Boot will see the hardware that's provided by QEMU. Some commands to try:
 
-- `cpu detail` = Print detailed CPU information
-- `bdinfo` = Print board specific information
-- `fdt print /` = Print complete flattened device tree, this will list all hardware with all properties available in the system
-- `fstypes` = File system types that U-Boot's current build supports
+- `cpu detail` = Print detailed CPU information.
+- `bdinfo` = Print board specific information.
+- `fdt print /` = Print complete flattened device tree, this will list all hardware with all properties available in the system. The `/` indicates start from the root of the tree.
+- `fstypes` = File system types that U-Boot's current build supports.
 
 On the tutorial machine, the `bdinfo` command reveals the following details about the board that QEMU has supplied to U-Boot:
 ```
