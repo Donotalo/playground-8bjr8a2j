@@ -3,7 +3,7 @@
 Run the following from the root working directory:
 ``` bash
 # Download the source code
-git clone https://github.com/riscv-software-src/opensbi.git
+git clone https://github.com/riscv-software-src/opensbi.gi
 
 cd opensbi
 git checkout v1.2
