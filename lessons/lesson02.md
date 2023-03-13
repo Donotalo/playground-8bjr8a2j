@@ -91,8 +91,8 @@ riscv64-linux-gcc --version
 
 It presented the version as follows:
 ```
-riscv64-linux-gcc.br_real (Buildroot 2022.05.2) 11.3.0
-Copyright (C) 2021 Free Software Foundation, Inc.
+riscv64-linux-gcc.br_real (Buildroot 2023.02) 12.2.0
+Copyright (C) 2022 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
