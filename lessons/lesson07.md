@@ -8,14 +8,14 @@ source tech.io-env.sh
 
 # Build Linux Kernel
 
-Let's download and build Linux kernel from source code. Linux `v6.2.6` will be used for this tutorial. Run the following from the root working directory:
+Let's download and build Linux kernel from source code. Linux kernel `v6.2` will be used for this tutorial. Run the following from the root working directory:
 ``` bash
-# Download the compressed file that contains Linux source code
-wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.2.6.tar.xz
+# Download Linux kernel source code
+git clone https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
 
-# Extract and enter into directory
-tar xf linux-6.2.6.tar.xz
-cd linux-6.2.6/
+# Checkout appropriate version
+cd linux
+git checkout v6.2
 ```
 
 Linux kernel will be built for `RISC-V` architecture. The default configurations for several targets can be obtained by the command below:
