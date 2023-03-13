@@ -5,7 +5,7 @@ The build system of [Linux kernel](https://kernel.org/) for RISC-V requires `ARC
 echo "export ARCH=riscv" >> tech.io-env.sh
 source tech.io-env.sh
 ```
--
+
 # Build Linux Kernel
 
 Let's download and build Linux kernel from source code. Linux kernel `v6.2` will be used for this tutorial. Run the following from the root working directory:
