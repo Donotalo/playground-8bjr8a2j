@@ -1,13 +1,13 @@
 Let's build [QEMU](https://www.qemu.org/) from source code so that it can simulate a `RISC-V` host.
 
-For this tutorial, QEMU `v7.1.0` will be used. Let's checkout the source code and build QEMU for RISC-V. Run the following in the root working directory:
+For this tutorial, QEMU `v7.2.0` will be used. Let's checkout the source code and build QEMU for RISC-V. Run the following in the root working directory:
 ``` bash
 # Download source code
 git clone https://gitlab.com/qemu-project/qemu.git
 
 # Checkout required version
 cd qemu
-git checkout v7.1.0
+git checkout v7.2.0
 
 # Prepare QEMU for build
 git submodule init
