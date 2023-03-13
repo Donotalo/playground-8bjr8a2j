@@ -14,21 +14,21 @@ This will be considered as the root working directory for this tutorial.
 
 # Installing Toolchain
 
-[Buildroot](https://buildroot.org/) is a software package that can generate necessary tools for cross compiling code base for embedded Linux. This tutorial will use version `v2022.05.2`.
+[Buildroot](https://buildroot.org/) is a software package that can generate necessary tools for cross compiling code base for embedded Linux. This tutorial will use version `v2023.02`.
 
 ``` bash
 # Download the file
-wget https://buildroot.org/downloads/buildroot-2022.05.2.tar.gz
+wget https://buildroot.org/downloads/buildroot-2023.02.tar.gz
 
 # Extract from compressed file
-tar xf buildroot-2022.05.2.tar.gz
+tar xf buildroot-2023.02.tar.gz
 ```
 > `tar` parameters:
 > - x = Extract files
 > - f = Use archive file
 
 ``` bash
-cd buildroot-2022.05.2
+cd buildroot-2023.02
 
 # To generate toolchain configuration file
 make menuconfig
