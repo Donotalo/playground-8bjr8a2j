@@ -28,7 +28,7 @@ Save & close the file. Meaning of the [QEMU parameters](https://www.qemu.org/doc
 
 Make the script file executable:
 ``` bash
-chmod +x run-u-boot.shx
+chmod +x run-u-boot.sh
 ```
 
 The system can now be run by the following command:
