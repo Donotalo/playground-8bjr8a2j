@@ -38,7 +38,7 @@ The system can now be run by the following command:
 
 By observing the console output, it can be seen that OpenSBI and U-Boot are loaded and being executed. Here's part of the output on the test machine that shows that U-Boot is running:
 ```
-U-Boot 2023.01 (Mar 13 2023 - 11:01:11 +0000)
+U-Boot 2022.10-dirty (Mar 14 2023 - 11:56:56 +0000)
 
 CPU:   rv64imafdch_zicsr_zifencei_zihintpause_zba_zbb_zbc_zbs_sstc
 Model: riscv-virtio,qemu
@@ -50,7 +50,6 @@ In:    serial@10000000
 Out:   serial@10000000
 Err:   serial@10000000
 Net:   No ethernet found.
-Working FDT set to bf7357d0
 Hit any key to stop autoboot:  0 
 
 Device 0: unknown device
@@ -59,7 +58,7 @@ scanning bus for devices...
 Device 0: unknown device
 No ethernet found.
 No ethernet found.
-=> 
+=>
 ```
 
 QEMU can be exited by pressing `Ctrl+A` followed by `X`.
