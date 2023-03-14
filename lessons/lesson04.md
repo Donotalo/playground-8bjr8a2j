@@ -13,7 +13,7 @@ source tech.io-env.sh
 
 ## Download Source Code
 
-This tutorial will use [U-Boot](https://www.denx.de/wiki/U-Boot) `v2023.01`. From the root working directory, run the following in the terminal:
+This tutorial will use [U-Boot](https://www.denx.de/wiki/U-Boot) `v2022.10`. From the root working directory, run the following in the terminal:
 
 ``` bash
 # Download U-Boot source
@@ -21,7 +21,7 @@ git clone https://source.denx.de/u-boot/u-boot.git
 
 # Checkout required version
 cd u-boot
-git checkout v2023.01
+git checkout v2022.10
 ```
 
 ## Board Configuration Files
