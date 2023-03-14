@@ -54,7 +54,7 @@ A `QEMU` simulated board will be chosen, with `RISC-V` 64 bit architecture capab
 
 ## Build
 
-U-Boot `v2022.10` won't compile with binutils `v2.39`. The reason and relevant Linux kernel patch can be found [here](https://lore.kernel.org/all/20221002172525.GD3044094@bill-the-cat/t/). In `v2023.01` of U-Boot the patch is availe so let's update the file `arch/riscv/Makefile` to bring the patch in the working directory:
+U-Boot `v2022.10` won't compile with binutils `v2.39`. The reason and relevant Linux kernel patch can be found [here](https://lore.kernel.org/all/20221002172525.GD3044094@bill-the-cat/t/). In `v2023.01` of U-Boot the patch is available so let's update the file `arch/riscv/Makefile` to bring the patch in the working directory:
 ```
 git checkout v2023.01 arch/riscv/Makefile
 ```
