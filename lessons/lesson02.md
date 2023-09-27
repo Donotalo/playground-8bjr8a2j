@@ -40,9 +40,9 @@ Select the following options:
     1. Target Architecture Size > 64-bit
 1. Toolchain
     1. C library > musl
-    1. Kernel Headers > Linux 6.1.x kernel headers
-    1. Binutils Version > binutils 2.39
-    1. GCC compiler Version > gcc 12.x
+    1. Kernel Headers > Linux 6.4.x kernel headers
+    1. Binutils Version > binutils 2.41
+    1. GCC compiler Version > gcc 13.x
 
 Exit and save the configuration. Build the toolchain:
 ``` bash
