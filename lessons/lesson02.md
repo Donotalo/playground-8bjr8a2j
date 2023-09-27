@@ -3,7 +3,7 @@
 Following command can be executed to install all software necessary for this tutorial:
 
 ``` bash
-sudo apt install build-essential libncurses-dev rsync git ninja-build libglib2.0-dev libpixman-1-dev bison flex libssl-dev 
+sudo apt update && sudo apt install build-essential libncurses-dev rsync git ninja-build libglib2.0-dev libpixman-1-dev bison flex libssl-dev 
 ```
 
 Prepare a working directory:
