@@ -14,21 +14,21 @@ This will be considered as the root working directory for this tutorial.
 
 # Installing Toolchain
 
-[Buildroot](https://buildroot.org/) is a software package that can generate necessary tools for cross compiling code base for embedded Linux. This tutorial will use version `v2023.02`.
+[Buildroot](https://buildroot.org/) is a software package that can generate necessary tools for cross compiling code base for embedded Linux. This tutorial will use version `v2023.08`.
 
 ``` bash
 # Download the file
-wget https://buildroot.org/downloads/buildroot-2023.02.tar.gz
+wget https://buildroot.org/downloads/buildroot-2023.08.tar.gz
 
 # Extract from compressed file
-tar xf buildroot-2023.02.tar.gz
+tar -xf buildroot-2023.08.tar.gz
 ```
 > `tar` parameters:
 > - x = Extract files
 > - f = Use archive file
 
 ``` bash
-cd buildroot-2023.02
+cd buildroot-2023.08
 
 # To generate toolchain configuration file
 make menuconfig
@@ -58,7 +58,7 @@ The output is the file `output/images/riscv64-buildroot-linux-musl_sdk-buildroot
 cd ..
 mkdir toolchain && cd toolchain
 
-tar xf ../buildroot-2023.02/output/images/riscv64-buildroot-linux-musl_sdk-buildroot.tar.gz
+tar -xf ../buildroot-2023.08/output/images/riscv64-buildroot-linux-musl_sdk-buildroot.tar.gz
 ```
 
 All the important binaries are now in `riscv64-buildroot-linux-musl_sdk-buildroot/bin` directory. The RISC-V compier is `riscv64-linux-gcc`. Fix the hardcoded paths by running the script:
