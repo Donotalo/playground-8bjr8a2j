@@ -12,6 +12,26 @@ mkdir tech.io && cd tech.io
 ```
 This will be considered as the root working directory for this tutorial.
 
+## Spaces/Tabs/Newline in `$PATH`
+
+If you're trying [WSL (Windows Subsystem for Linux)](https://learn.microsoft.com/en-us/windows/wsl/about) On Windows, the system's `$PATH` variable may contain whitespaces. If that's the case, commands which depend on `$PATH` won't work. You can inspect `$PATH` by the following command:
+```bash
+echo $PATH
+```
+
+If `$PATH` contains whitespaces, you have two options:
+1. Remove the entries which contain whitespaces. If they start with `/mnt`, removing them will remove dependencies on Windows system.
+2. Surround the entries with double quotes (`"`). Like `/mnt/c/Program Files/Java/jdk-16.0.1/bin` should be `"/mnt/c/Program Files/Java/jdk-16.0.1/bin"`.
+
+Once you've done constructing new `$PATH`, make them available in the terminal session using the following command:
+```bash
+export PATH=<new path entries>
+```
+For instance:
+```bash
+ export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib
+```
+
 # Installing Toolchain
 
 [Buildroot](https://buildroot.org/) is a software package that can generate necessary tools for cross compiling code base for embedded Linux. This tutorial will use version `v2023.08`.
