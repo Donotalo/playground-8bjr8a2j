@@ -14,7 +14,7 @@ This will be considered as the root working directory for this tutorial.
 
 ## Spaces/Tabs/Newline in `$PATH`
 
-If you're trying [WSL (Windows Subsystem for Linux)](https://learn.microsoft.com/en-us/windows/wsl/about) On Windows, the system's `$PATH` variable may contain whitespaces. If that's the case, commands which depend on `$PATH` won't work. You can inspect `$PATH` by the following command:
+If you're trying [WSL (Windows Subsystem for Linux)](https://learn.microsoft.com/en-us/windows/wsl/about) on Windows, the system's `$PATH` variable may contain whitespaces. If that's the case, commands which depend on `$PATH` won't work. You can inspect `$PATH` by the following command:
 ```bash
 echo $PATH
 ```
