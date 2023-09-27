@@ -93,13 +93,8 @@ Place the binaries in system path:
 # Go to the working directory
 cd ..
 
-# Create a script to update system path
-gedit tech.io-env.sh &
-```
-
-Write the following in the `tech.io-env.sh` file:
-```
-export PATH=~/tech.io/toolchain/riscv64-buildroot-linux-musl_sdk-buildroot/bin:$PATH
+# Create a script named tech.io-env.sh to update system path
+printf "export PATH=~/tech.io/toolchain/riscv64-buildroot-linux-musl_sdk-buildroot/bin:$PATH" > tech.io-env.sh
 ```
 
 Update environment variable by running the script using [source](https://superuser.com/questions/46139/what-does-source-do) & test:
