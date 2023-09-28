@@ -9,8 +9,7 @@ A disk image is ready with Linux kernel. We need a way to make QEMU aware of the
 
 Run the following commands from the root working directory to add additional parameters to QEMU so that QEMU recognizes the disk image:
 ``` bash
-cd qemu/
-gedit ./run-u-boot.sh &
+editor run-u-boot.sh
 ```
 Append the following lines to the end of the file:
 ```
