@@ -48,7 +48,7 @@ scanning bus for devices...
 ## Setup
 
 ### Device Back End
-`-blockdev driver=file,filename=../disk.img,node-name=disk`
+`-blockdev driver=file,filename=./disk.img,node-name=disk`
 
 - `driver=file` = Indicates that the back end is a file
 - `filename` = Path to the disk image that will act as the back end
