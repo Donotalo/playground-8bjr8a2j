@@ -8,7 +8,7 @@ gedit run-u-boot.sh &
 
 Write the following in the `run-u-boot.sh`:
 ```
-#! /usr/bin/bash
+#!/usr/bin/bash
 
 ./build/qemu-system-riscv64 -smp 2 \
 -m 1G \
