@@ -2,23 +2,19 @@ The OpenSBI firmware that loads U-Boot in QEMU - all executables are ready now.
 
 Let's create a script file for executing QEMU. From the root working directory, run the following:
 ``` bash
-cd qemu/
-gedit run-u-boot.sh &
+echo '#!/usr/bin/bash' > run-u-boot.sh
+echo '' >> run-u-boot.sh
+echo './qemu/build/qemu-system-riscv64 -smp 2 \' >> run-u-boot.sh
+echo '-m 1G \' >> run-u-boot.sh
+echo '-nographic \' >> run-u-boot.sh
+echo '-machine virt \' >> run-u-boot.sh
+echo '-bios ./opensbi/build/platform/generic/firmware/fw_payload.elf' >> run-u-boot.sh
 ```
 
-Write the following in the `run-u-boot.sh`:
-```
-#!/usr/bin/bash
-
-./build/qemu-system-riscv64 -smp 2 \
--m 1G \
--nographic \
--machine virt \
--bios ../opensbi/build/platform/generic/firmware/fw_payload.elf
-```
+This will create a script called `run-u-boot.sh` which will hold all parameters necessary to run `U-Boot` in `QEMU`.
 > Note that this is a [multiline script](https://superuser.com/a/1634621). Each line should end with a backslash (`\`) for continuation.
 
-Save & close the file. Meaning of the [QEMU parameters](https://www.qemu.org/docs/master/system/invocation.html) are as follows:
+Meaning of the [QEMU parameters](https://www.qemu.org/docs/master/system/invocation.html) are as follows:
 
 > - `smp` = Number of processing units
 > - `m` = Total memory
