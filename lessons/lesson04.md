@@ -13,7 +13,7 @@ source tech.io-env.sh
 
 ## Download Source Code
 
-This tutorial will use [U-Boot](https://www.denx.de/wiki/U-Boot) `v2022.10`. From the root working directory, run the following in the terminal:
+This tutorial will use [U-Boot](https://www.denx.de/wiki/U-Boot) `v2023.07.02`. From the root working directory, run the following in the terminal:
 
 ``` bash
 # Download U-Boot source
@@ -21,7 +21,7 @@ git clone https://source.denx.de/u-boot/u-boot.git
 
 # Checkout required version
 cd u-boot
-git checkout v2022.10
+git checkout v2023.07.02
 ```
 
 ## Board Configuration Files
@@ -53,11 +53,6 @@ qemu-riscv64_spl_defconfig
 A `QEMU` simulated board will be chosen, with `RISC-V` 64 bit architecture capable of running `Linux`. `qemu-riscv64_smode_defconfig` will serve the purpose of this tutorial. The S-Mode (supervisor mode) configuration is chosen so that it can load Linux kernel.
 
 ## Build
-
-U-Boot `v2022.10` won't compile with binutils `v2.39`. The reason and relevant Linux kernel patch can be found [here](https://lore.kernel.org/all/20221002172525.GD3044094@bill-the-cat/t/). In `v2023.01` of U-Boot the patch is available so let's update the file `arch/riscv/Makefile` to bring the patch in the working directory:
-```
-git checkout v2023.01 arch/riscv/Makefile
-```
 
 The command to build is:
 ``` bash
