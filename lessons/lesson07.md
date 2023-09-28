@@ -48,7 +48,7 @@ CONFIG_RISCV=y
 ```
 This happens because of the environment variable `ARCH` is set to `riscv`. It is used when the `.config` file was generated. The details can be found by opening the `Makefile`:
 ``` bash
-gedit ./Makefile &
+editor ./Makefile
 ```
 and searching for `ARCH` and `CROSS_COMPILE`.
 
