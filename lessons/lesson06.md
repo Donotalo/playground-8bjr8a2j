@@ -34,19 +34,20 @@ The system can now be run by the following command:
 
 By observing the console output, it can be seen that OpenSBI and U-Boot are loaded and being executed. Here's part of the output on the test machine that shows that U-Boot is running:
 ```
-U-Boot 2022.10-dirty (Mar 14 2023 - 11:56:56 +0000)
+U-Boot 2023.07.02 (Sep 28 2023 - 07:11:42 +0100)
 
 CPU:   rv64imafdch_zicsr_zifencei_zihintpause_zba_zbb_zbc_zbs_sstc
 Model: riscv-virtio,qemu
 DRAM:  1 GiB
-Core:  26 devices, 12 uclasses, devicetree: board
+Core:  22 devices, 10 uclasses, devicetree: board
 Flash: 32 MiB
 Loading Environment from nowhere... OK
 In:    serial@10000000
 Out:   serial@10000000
 Err:   serial@10000000
 Net:   No ethernet found.
-Hit any key to stop autoboot:  0 
+Working FDT set to bf7307d0
+Hit any key to stop autoboot:  0
 
 Device 0: unknown device
 scanning bus for devices...
