@@ -15,7 +15,7 @@ Save the configuration and exit the configuration utility. Now build U-Boot, bui
 make -j$(nproc)
 cd ../opensbi/
 make PLATFORM=generic FW_PAYLOAD_PATH=../u-boot/u-boot.bin -j$(nproc)
-cd ../qemu/
+cd ..
 ./run-u-boot.sh
 ```
 
