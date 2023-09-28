@@ -94,7 +94,7 @@ Place the binaries in system path:
 cd ..
 
 # Create a script named tech.io-env.sh to update system path
-printf "export PATH=~/tech.io/toolchain/riscv64-buildroot-linux-musl_sdk-buildroot/bin:$PATH" > tech.io-env.sh
+printf "export PATH=~/tech.io/toolchain/riscv64-buildroot-linux-musl_sdk-buildroot/bin:$PATH\n" > tech.io-env.sh
 ```
 > - The [`printf`](https://www.howtogeek.com/781474/how-to-use-the-bash-printf-command-on-linux/) command is used to print something on the terminal.
 > - The [`>` operator](https://askubuntu.com/questions/420981/how-do-i-save-terminal-output-to-a-file) redirects the terminal output to a file.
