@@ -13,7 +13,7 @@ editor run-u-boot.sh
 ```
 Append the following lines to the end of the file:
 ```
--blockdev driver=file,filename=../disk.img,node-name=disk \
+-blockdev driver=file,filename=./disk.img,node-name=disk \
 -device virtio-blk-device,drive=disk
 ```
 
