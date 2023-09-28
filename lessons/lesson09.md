@@ -24,7 +24,7 @@ Save and close the file. Run the script:
 Observe that U-Boot has detected the disk as seen in something like the following console output:
 ```
 ...
-Hit any key to stop autoboot:  0 
+Hit any key to stop autoboot:  0
 
 Device 0: QEMU VirtIO Block Device
             Type: Hard Disk
@@ -33,6 +33,8 @@ Device 0: QEMU VirtIO Block Device
 Scanning virtio 0:1...
 ** File not found ubootefi.var **
 Failed to load EFI variables
+** Unable to write file ubootefi.var **
+Failed to persist EFI variables
 BootOrder not defined
 EFI boot manager: Cannot load any image
 scanning bus for devices...
